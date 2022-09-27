@@ -1,0 +1,49 @@
+{
+  "categories": [
+    "All",
+    "Burgers",
+    "Chinese",
+    "Desserts",
+    "Falafel",
+    "Indian",
+    "Japanese",
+    "Korean",
+    "Pasta",
+    "Polish",
+    "Vegetarian"
+  ],
+  "items": [
+    {
+      "id": 0,
+      "name": "giga burger",
+      "description": "Traditional burger with extra meat",
+      "price": 10,
+      "img": "path",
+      "category": "burgers"
+    },
+    {
+      "id": 1,
+      "name": "roasted duck",
+      "description": "Crispy skin duck",
+      "price": 12,
+      "img": "path",
+      "category": "chinese"
+    },
+    {
+      "id": 2,
+      "name": "egg burger",
+      "description": "Special burger with fried egg ",
+      "price": 8.5,
+      "img": "path",
+      "category": "burgers"
+    },
+    {
+      "id": 3,
+      "name": "Doughnuts",
+      "description": "With chocolade, caramel or strawberry icing",
+      "price": 2,
+      "img": "path",
+      "category": "desserts"
+    }
+  ]
+}
