@@ -5,11 +5,16 @@ import Product from "../product/Product";
 
 import { useEffect, useState } from "react";
 
-export default function ProductContainer() {
+export default function ProductsList() {
   const axios = require("axios");
   const [items, getItems] = useState([]);
+  const [pageNum, getPageNum] = useState(0);
   async function getNewItems() {
-    const { data } = await axios.get("http://localhost:3000/items");
+    const { data } = await axios.get("http://localhost:3000/items", {
+      params: {
+        page: pageNum,
+      },
+    });
 
     const newItems = data.map(item => {
       return (
@@ -27,12 +32,19 @@ export default function ProductContainer() {
   }
   useEffect(() => {
     getNewItems();
-  }, [items]);
+  }, []);
+
+  const loadMore = () => {
+    getPageNum(1 + pageNum);
+    getNewItems();
+  };
 
   return (
     <div>
       <div className="products-list">{items}</div>
-      <Button load>Load more</Button>
+      <Button load onClick={loadMore}>
+        Load more
+      </Button>
     </div>
   );
 }

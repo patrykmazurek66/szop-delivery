@@ -2,6 +2,10 @@ import "./product.css";
 import Button from "../button/Button";
 
 export default function Product({ name, imagePath, description, price }) {
+  const addToCart = item => {
+    localStorage.setItem("cart", item);
+  };
+
   return (
     <div className="product-container">
       <img src={imagePath} alt={name} className="product--img" />
@@ -12,7 +16,7 @@ export default function Product({ name, imagePath, description, price }) {
         </div>
         <div className="product--price-btn">
           <p className="product-price">{price}$</p>
-          <Button small primary>
+          <Button small primary onClick={() => addToCart(name)}>
             ADD +
           </Button>
         </div>

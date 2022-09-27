@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     getAllCategories();
-  }, [categories]);
+  }, []);
 
   const getAllCategories = function () {
     axios
