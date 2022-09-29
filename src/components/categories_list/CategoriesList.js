@@ -3,8 +3,18 @@ import "./categoriesList.css";
 import Button from "../button/Button";
 
 export default function CategoriesList({ categories }) {
-  const listItems = categories.map((cat, index) => (
-    <Button category key={index}>
+  const changeCategory = categoryName => {
+    console.log(categoryName);
+  };
+
+  const listItems = categories.map(cat => (
+    <Button
+      category
+      key={cat}
+      onClick={() => {
+        changeCategory(cat);
+      }}
+    >
       {cat}
     </Button>
   ));

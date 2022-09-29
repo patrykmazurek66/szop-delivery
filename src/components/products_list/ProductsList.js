@@ -6,23 +6,16 @@ import Product from "../product/Product";
 import { useEffect, useState } from "react";
 export default function ProductsList() {
   const axios = require("axios");
-  const [allItems, setAllItems] = useState(0);
+  const [allItemsNumber, setAllItemsNumber] = useState(5);
   const [items, setItems] = useState([]);
+  const [Allitems, setAllItems] = useState([]);
   const [itemsAmount, setItemsAmount] = useState(5);
 
-  async function countAllItems() {
+  async function getAllItems() {
     const { data } = await axios.get("http://localhost:3000/items");
-    setAllItems(data.length);
-  }
-  async function getNewItems() {
-    countAllItems();
-    const { data } = await axios.get("http://localhost:3000/items", {
-      params: {
-        _limit: itemsAmount,
-      },
-    });
+    setAllItemsNumber(data.length);
 
-    const newItems = data.map(item => {
+    const itemsArr = data.map(item => {
       return (
         <Product
           name={item.name}
@@ -34,16 +27,20 @@ export default function ProductsList() {
       );
     });
 
-    setItems(newItems);
+    setAllItems(itemsArr);
   }
+
   useEffect(() => {
-    getNewItems();
-  }, [itemsAmount]);
+    getAllItems();
+  }, []);
+  useEffect(() => {
+    setItems(Allitems.filter((item, index) => index < itemsAmount));
+  }, [itemsAmount, items]);
 
   return (
     <div>
       <div className="products-list">{items}</div>
-      {allItems > itemsAmount && (
+      {allItemsNumber > itemsAmount && (
         <Button load onClick={() => setItemsAmount(itemsAmount + 5)}>
           Load more
         </Button>

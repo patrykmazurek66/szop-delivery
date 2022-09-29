@@ -19,10 +19,19 @@ const Button = styled.button`
       background: transparent;
       color: var(--main700);
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 24px;
       border: none;
     `}
+
+    ${props =>
+    props.active &&
+    css`
+      font-weight: 700;
+      font-size: 22px;
+      text-decoration-line: underline;
+    `}
+
   ${props =>
     props.small &&
     css`
