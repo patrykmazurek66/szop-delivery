@@ -4,12 +4,18 @@ import Button from "../button/Button";
 import Product from "../product/Product";
 
 import { useEffect, useState } from "react";
-
 export default function ProductsList() {
   const axios = require("axios");
-  const [items, getItems] = useState([]);
-  const [itemsAmount, getItemsAmount] = useState(5);
+  const [allItems, setAllItems] = useState(0);
+  const [items, setItems] = useState([]);
+  const [itemsAmount, setItemsAmount] = useState(5);
+
+  async function countAllItems() {
+    const { data } = await axios.get("http://localhost:3000/items");
+    setAllItems(data.length);
+  }
   async function getNewItems() {
+    countAllItems();
     const { data } = await axios.get("http://localhost:3000/items", {
       params: {
         _limit: itemsAmount,
@@ -28,7 +34,7 @@ export default function ProductsList() {
       );
     });
 
-    getItems(newItems);
+    setItems(newItems);
   }
   useEffect(() => {
     getNewItems();
@@ -37,9 +43,11 @@ export default function ProductsList() {
   return (
     <div>
       <div className="products-list">{items}</div>
-      <Button load onClick={() => getItemsAmount(itemsAmount + 5)}>
-        Load more
-      </Button>
+      {allItems > itemsAmount && (
+        <Button load onClick={() => setItemsAmount(itemsAmount + 5)}>
+          Load more
+        </Button>
+      )}
     </div>
   );
 }
