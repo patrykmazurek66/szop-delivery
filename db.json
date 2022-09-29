@@ -18,7 +18,7 @@
       "name": "giga burger",
       "description": "Traditional burger with extra meat",
       "price": 10,
-      "img": "path",
+      "img": "blank.png",
       "category": "burgers",
       "page": 0
     },
@@ -27,7 +27,7 @@
       "name": "roasted duck",
       "description": "Crispy skin duck",
       "price": 12,
-      "img": "path",
+      "img": "blank.png",
       "category": "chinese",
       "page": 0
     },
@@ -36,7 +36,7 @@
       "name": "egg burger",
       "description": "Special burger with fried egg ",
       "price": 8.5,
-      "img": "path",
+      "img": "blank.png",
       "category": "burgers",
       "page": 0
     },
@@ -45,7 +45,7 @@
       "name": "Doughnuts",
       "description": "With chocolade, caramel or strawberry icing",
       "price": 2,
-      "img": "path",
+      "img": "blank.png",
       "category": "desserts",
       "page": 0
     },
@@ -54,7 +54,7 @@
       "name": "giga burger",
       "description": "Traditional burger with extra meat",
       "price": 10,
-      "img": "path",
+      "img": "blank.png",
       "category": "burgers",
       "page": 1
     },
@@ -63,7 +63,7 @@
       "name": "roasted duck",
       "description": "Crispy skin duck",
       "price": 12,
-      "img": "path",
+      "img": "blank.png",
       "category": "chinese",
       "page": 1
     },
@@ -72,7 +72,7 @@
       "name": "egg burger",
       "description": "Special burger with fried egg ",
       "price": 8.5,
-      "img": "path",
+      "img": "blank.png",
       "category": "burgers",
       "page": 2
     },
@@ -81,7 +81,79 @@
       "name": "Doughnuts",
       "description": "With chocolade, caramel or strawberry icing",
       "price": 2,
-      "img": "path",
+      "img": "blank.png",
+      "category": "desserts",
+      "page": 2
+    },
+    {
+      "id": 8,
+      "name": "giga burger",
+      "description": "Traditional burger with extra meat",
+      "price": 10,
+      "img": "blank.png",
+      "category": "burgers",
+      "page": 0
+    },
+    {
+      "id": 9,
+      "name": "roasted duck",
+      "description": "Crispy skin duck",
+      "price": 12,
+      "img": "blank.png",
+      "category": "chinese",
+      "page": 0
+    },
+    {
+      "id": 10,
+      "name": "egg burger",
+      "description": "Special burger with fried egg ",
+      "price": 8.5,
+      "img": "blank.png",
+      "category": "burgers",
+      "page": 0
+    },
+    {
+      "id": 11,
+      "name": "Doughnuts",
+      "description": "With chocolade, caramel or strawberry icing",
+      "price": 2,
+      "img": "blank.png",
+      "category": "desserts",
+      "page": 0
+    },
+    {
+      "id": 12,
+      "name": "giga burger",
+      "description": "Traditional burger with extra meat",
+      "price": 10,
+      "img": "blank.png",
+      "category": "burgers",
+      "page": 1
+    },
+    {
+      "id": 13,
+      "name": "roasted duck",
+      "description": "Crispy skin duck",
+      "price": 12,
+      "img": "blank.png",
+      "category": "chinese",
+      "page": 1
+    },
+    {
+      "id": 14,
+      "name": "egg burger",
+      "description": "Special burger with fried egg ",
+      "price": 8.5,
+      "img": "blank.png",
+      "category": "burgers",
+      "page": 2
+    },
+    {
+      "id": 15,
+      "name": "Doughnuts",
+      "description": "With chocolade, caramel or strawberry icing",
+      "price": 2,
+      "img": "blank.png",
       "category": "desserts",
       "page": 2
     }

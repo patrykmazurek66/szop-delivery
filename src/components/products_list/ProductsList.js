@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 export default function ProductsList() {
   const axios = require("axios");
   const [items, getItems] = useState([]);
-  const [pageNum, getPageNum] = useState(0);
+  const [itemsAmount, getItemsAmount] = useState(5);
   async function getNewItems() {
     const { data } = await axios.get("http://localhost:3000/items", {
       params: {
-        page: pageNum,
+        _limit: itemsAmount,
       },
     });
 
@@ -23,7 +23,7 @@ export default function ProductsList() {
           description={item.description}
           price={item.price}
           key={item.name}
-          imagePath={item.path}
+          imagePath={item.img}
         />
       );
     });
@@ -32,17 +32,12 @@ export default function ProductsList() {
   }
   useEffect(() => {
     getNewItems();
-  }, []);
-
-  const loadMore = () => {
-    getPageNum(1 + pageNum);
-    getNewItems();
-  };
+  }, [itemsAmount]);
 
   return (
     <div>
       <div className="products-list">{items}</div>
-      <Button load onClick={loadMore}>
+      <Button load onClick={() => getItemsAmount(itemsAmount + 5)}>
         Load more
       </Button>
     </div>

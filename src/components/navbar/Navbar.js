@@ -3,7 +3,7 @@ import "./navbar.css";
 export default function Navbar() {
   return (
     <nav>
-      <img src={require("../../content/logo.png")} alt="logo" className="nav--logo" />
+      <img src={"logo.png"} alt="logo" className="nav--logo" />
       <h1 className="nav--app-name">SZOP-DELIVERY</h1>
       <div className="nav--icons-container">
         <img src={require("../../content/AccountCircleFilled.svg").default} alt="account" />
