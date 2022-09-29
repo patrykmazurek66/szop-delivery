@@ -1,7 +1,8 @@
 const axios = require("axios");
 import Product from "../product/Product";
+import Button from "../button/Button";
 
-export default function axiosGetItems(url) {
+export function axiosGetItems(url) {
   return axios.get(url).then(res => {
     const data = res.data.map(item => {
       return (
@@ -15,6 +16,17 @@ export default function axiosGetItems(url) {
       );
     });
 
+    return data;
+  });
+}
+
+export function axiosGetCategories(url) {
+  return axios.get(url).then(res => {
+    const data = res.data.map(cat => (
+      <Button category key={cat}>
+        {cat}
+      </Button>
+    ));
     return data;
   });
 }

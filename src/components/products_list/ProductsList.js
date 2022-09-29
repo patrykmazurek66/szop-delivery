@@ -1,10 +1,9 @@
 import "./productsList.css";
-import "../communicate/Comm";
+import { axiosGetItems } from "../communicate/Comm";
 
 import Button from "../button/Button";
 
 import { useEffect, useState } from "react";
-import axiosGetItems from "../communicate/Comm";
 export default function ProductsList() {
   const [items, setItems] = useState([]);
   const [allItems, setAllItems] = useState([]);
