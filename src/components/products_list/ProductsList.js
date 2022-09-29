@@ -1,47 +1,41 @@
 import "./productsList.css";
+import "../communicate/Comm";
 
 import Button from "../button/Button";
-import Product from "../product/Product";
 
 import { useEffect, useState } from "react";
+import axiosGetItems from "../communicate/Comm";
 export default function ProductsList() {
-  const axios = require("axios");
-  const [allItemsNumber, setAllItemsNumber] = useState(5);
   const [items, setItems] = useState([]);
-  const [Allitems, setAllItems] = useState([]);
+  const [allItems, setAllItems] = useState([]);
   const [itemsAmount, setItemsAmount] = useState(5);
+  const [maxItemsAmount, setMaxItemsAmount] = useState(0);
 
   async function getAllItems() {
-    const { data } = await axios.get("http://localhost:3000/items");
-    setAllItemsNumber(data.length);
-
-    const itemsArr = data.map(item => {
-      return (
-        <Product
-          name={item.name}
-          description={item.description}
-          price={item.price}
-          key={item.name}
-          imagePath={item.img}
-        />
-      );
-    });
-
+    const itemsArr = await axiosGetItems("http://localhost:3000/items");
+    setMaxItemsAmount(itemsArr.length);
     setAllItems(itemsArr);
+    setItems(itemsArr.slice(0, 5));
   }
 
   useEffect(() => {
     getAllItems();
   }, []);
+
   useEffect(() => {
-    setItems(Allitems.filter((item, index) => index < itemsAmount));
-  }, [itemsAmount, items]);
+    setItems(allItems.slice(0, itemsAmount));
+  }, [itemsAmount, allItems]);
 
   return (
     <div>
       <div className="products-list">{items}</div>
-      {allItemsNumber > itemsAmount && (
-        <Button load onClick={() => setItemsAmount(itemsAmount + 5)}>
+      {maxItemsAmount > itemsAmount && (
+        <Button
+          load
+          onClick={() => {
+            setItemsAmount(itemsAmount + 5);
+          }}
+        >
           Load more
         </Button>
       )}
