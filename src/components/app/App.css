@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .main-page {
+  margin: 0;
   display: flex;
 }
 
@@ -11,6 +12,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  height: 100vh;
+  min-height: 100vh;
+}
+.top-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

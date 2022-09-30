@@ -43,11 +43,13 @@ const Button = styled.button`
 ${props =>
     props.sort &&
     css`
-  width:125px;
-  height50px;
+  width:136px;
+  height30px;
   font-size: 16px;
   font-weight:300;
-  line-height:24px;  
+  line-height:20px;  
+  margin-left:50px;
+  flex-shrink:0;
   `}
 
 ${props =>
@@ -55,7 +57,7 @@ ${props =>
     css`
   width:80%;
   height50px;
-  margin: 0 10%;
+  margin: 40px 10% 0 10%;
   font-size: 16px;
   font-weight:300;
   line-height:24px;  

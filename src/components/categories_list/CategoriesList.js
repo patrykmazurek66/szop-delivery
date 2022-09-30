@@ -21,7 +21,7 @@ export default function CategoriesList() {
 
   return (
     <div className="categories-list">
-      <h2>Categories</h2>
+      <h2 className="categories-header">Categories</h2>
       {categories}
     </div>
   );

@@ -1,0 +1,13 @@
+.searchbar-container {
+  /* position: sticky;
+  top: 100px;
+  z-index: 1;
+  background-color: #fff; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 40px 0 15px 0;
+  /* padding: 0 2%; */
+
+  /* gap: 40px; */
+}
