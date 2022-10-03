@@ -1,24 +1,22 @@
-import "./App.css";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CartPage from "../cartpage/CartPage";
+import MainPage from "../mainpage/MainPage";
 import Navbar from "../navbar/Navbar";
-import Footer from "../footer/Footer";
-import ProductsList from "../products_list/ProductsList";
-import CategoriesList from "../categories_list/CategoriesList";
-import Searchbar from "../searchbar/Searchbar";
+import OrderHisoryPage from "../orderhistorypage/OrderHistoryPage";
+import OrderPage from "../orderpage/OrderPage";
 
 function App() {
   return (
-    <div className="App">
-      <div className="top-page">
-        <Navbar />
-        <Searchbar />
-        <section className="main-page">
-          <CategoriesList />
-          <ProductsList />
-        </section>
-      </div>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<MainPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="order" element={<OrderPage />} />
+          <Route path="order-history" element={<OrderHisoryPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

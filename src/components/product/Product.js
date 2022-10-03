@@ -3,7 +3,10 @@ import Button from "../button/Button";
 
 export default function Product({ name, imagePath, description, price }) {
   const addToCart = item => {
-    localStorage.setItem("cart", item);
+    let cart = [];
+    cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
+    cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
   };
 
   return (
