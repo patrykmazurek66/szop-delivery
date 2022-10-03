@@ -10,7 +10,7 @@ export default function MainPage() {
     <div className="main-page">
       <div className="top-page">
         <Searchbar />
-        <section className="hero">
+        <section className="main-page--hero">
           <CategoriesList />
           <ProductsList />
         </section>

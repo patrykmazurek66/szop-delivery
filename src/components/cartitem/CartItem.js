@@ -23,39 +23,41 @@ export default function CartItem({ name, price, qty, refresh }) {
   return (
     <div className="item-container">
       <p className="item-name">{name}</p>
-      <div className="qty-container">
-        <div className="qty-container--minus">-</div>
-        <input
-          min={0}
-          max={99}
-          required
-          type="number"
-          className="qty-container--qty"
+      <div className="item-container--righ-col">
+        <div className="qty-container">
+          <div className="qty-container--minus">-</div>
+          <input
+            min={0}
+            max={99}
+            required
+            type="number"
+            className="qty-container--qty"
+            data-itemname={name}
+            data-itemprice={price}
+            value={qty}
+            onChange={e => {
+              const name = e.target.getAttribute("data-itemname");
+              const price = e.target.getAttribute("data-itemprice");
+              const quantity = e.target.value;
+              addToCart({ name, price, quantity });
+              refresh();
+            }}
+          />
+          <div className="qty-container--plus">+</div>
+        </div>
+        <p className="price">{(price * qty).toFixed(2)}$</p>
+        <button
+          className="delete-item"
           data-itemname={name}
-          data-itemprice={price}
-          value={qty}
-          onChange={e => {
+          onClick={e => {
             const name = e.target.getAttribute("data-itemname");
-            const price = e.target.getAttribute("data-itemprice");
-            const quantity = e.target.value;
-            addToCart({ name, price, quantity });
+            deleteFromCart(name);
             refresh();
           }}
-        />
-        <div className="qty-container--plus">+</div>
+        >
+          X
+        </button>
       </div>
-      <p className="price">{(price * qty).toFixed(2)}$</p>
-      <button
-        className="delete-item"
-        data-itemname={name}
-        onClick={e => {
-          const name = e.target.getAttribute("data-itemname");
-          deleteFromCart(name);
-          refresh();
-        }}
-      >
-        X
-      </button>
     </div>
   );
 }

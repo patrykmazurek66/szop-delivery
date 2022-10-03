@@ -1,39 +1,18 @@
 import Footer from "../footer/Footer";
-import { useState, useEffect } from "react";
-import CartItem from "../cartitem/CartItem";
+import CartItemsContainer from "../cartitemscontainer/CartItemsContainer";
+import "./cartpage.css";
+import Button from "../button/Button";
 
 export default function CartPage() {
-  const [cart, setCart] = useState([]);
-  const [items, setItems] = useState([]);
-
-  function refresh() {
-    setCart(JSON.parse(localStorage.cart));
-  }
-
-  useEffect(() => {
-    setCart(JSON.parse(localStorage.cart));
-  }, []);
-
-  useEffect(() => {
-    setItems(
-      cart.map(item => {
-        return (
-          <CartItem
-            name={item.name}
-            price={item.price}
-            qty={item.quantity}
-            key={item.name}
-            refresh={refresh}
-          />
-        );
-      })
-    );
-  }, [cart]);
-
   return (
-    <>
-      {items}
+    <div className="cart-page--hero">
+      <div className="cart-page--cart-items-container">
+        <CartItemsContainer />
+        <Button load primary>
+          GO TO SUMMARY
+        </Button>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }

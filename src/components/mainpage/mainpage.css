@@ -3,7 +3,7 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-.hero {
+.main-page--hero {
   margin: 0;
   display: flex;
 }
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
 }
 .top-page {
   display: flex;
