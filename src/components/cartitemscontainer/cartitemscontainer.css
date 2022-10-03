@@ -1,0 +1,21 @@
+.cart-items-container {
+  border: 1px var(--main900) solid;
+  background-color: var(--main100);
+  color: var(--main900);
+  width: 675px;
+}
+
+.cart-items-container--header {
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+}
+
+.cart-items-container--total-cost {
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
