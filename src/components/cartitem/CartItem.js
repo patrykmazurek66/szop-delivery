@@ -2,6 +2,7 @@ import "./cartitem.css";
 
 export default function CartItem({ name, price, qty, refresh }) {
   const addToCart = item => {
+    item.quantity > 99 ? (item.quantity = 99) : () => {};
     let cart = [];
     let elements = 0;
     cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
@@ -27,6 +28,7 @@ export default function CartItem({ name, price, qty, refresh }) {
         <input
           min={0}
           max={99}
+          required
           type="number"
           className="qty-container--qty"
           data-itemname={name}
