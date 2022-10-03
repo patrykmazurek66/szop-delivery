@@ -4,8 +4,12 @@ import Button from "../button/Button";
 export default function Product({ name, imagePath, description, price }) {
   const addToCart = item => {
     let cart = [];
+    let elements = 0;
     cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
-    cart.push(item);
+    cart.map(el => {
+      el.name === item.name ? el.quantity++ : elements++;
+    });
+    elements === cart.length ? cart.push(item) : () => {};
     localStorage.setItem("cart", JSON.stringify(cart));
   };
 
@@ -19,7 +23,7 @@ export default function Product({ name, imagePath, description, price }) {
         </div>
         <div className="product--price-btn">
           <p className="product-price">{price}$</p>
-          <Button small primary onClick={() => addToCart(name)}>
+          <Button small primary onClick={() => addToCart({ name, price, quantity: 1 })}>
             ADD +
           </Button>
         </div>
