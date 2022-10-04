@@ -19,8 +19,7 @@
       "description": "Traditional burger with extra meat",
       "price": 10,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 0
+      "category": "burgers"
     },
     {
       "id": 1,
@@ -28,8 +27,7 @@
       "description": "Crispy skin duck",
       "price": 12,
       "img": "blank.png",
-      "category": "chinese",
-      "page": 0
+      "category": "chinese"
     },
     {
       "id": 2,
@@ -37,125 +35,175 @@
       "description": "Special burger with fried egg ",
       "price": 8.5,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 0
+      "category": "burgers"
     },
     {
       "id": 3,
       "name": "Doughnuts",
-      "description": "With chocolade, caramel or strawberry icing",
+      "description": "Witch chocolade, caramel or strawberry icing",
       "price": 2,
       "img": "blank.png",
-      "category": "desserts",
-      "page": 0
+      "category": "desserts"
     },
     {
       "id": 4,
-      "name": "giga burger",
-      "description": "Traditional burger with extra meat",
-      "price": 10,
+      "name": "chow mein",
+      "description": "Noodles, meat (chicken, beef, shrimp, or pork), onions, and celery",
+      "price": 7,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 1
+      "category": "chinese"
     },
     {
       "id": 5,
-      "name": "roasted duck",
-      "description": "Crispy skin duck",
-      "price": 12,
+      "name": "strawberry fool",
+      "description": "Strawberries and cream",
+      "price": 1.5,
       "img": "blank.png",
-      "category": "chinese",
-      "page": 1
+      "category": "desserts"
     },
     {
       "id": 6,
-      "name": "egg burger",
-      "description": "Special burger with fried egg ",
-      "price": 8.5,
+      "name": "burger",
+      "description": "Traditional burger",
+      "price": 5,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 2
+      "category": "burgers"
     },
     {
       "id": 7,
-      "name": "Doughnuts",
-      "description": "With chocolade, caramel or strawberry icing",
-      "price": 2,
+      "name": "butter chicken",
+      "description": "Marinated chicken in a tomato gravy thick",
+      "price": 11.5,
       "img": "blank.png",
-      "category": "desserts",
-      "page": 2
+      "category": "indian"
     },
     {
       "id": 8,
-      "name": "giga burger",
-      "description": "Traditional burger with extra meat",
-      "price": 10,
+      "name": "falafel in tortilla",
+      "description": "Combination of falafel balls, hummus, and a mixed green salad",
+      "price": 6,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 0
+      "category": "falafel"
     },
     {
       "id": 9,
-      "name": "roasted duck",
-      "description": "Crispy skin duck",
-      "price": 12,
+      "name": "kung pao chicken",
+      "description": "Diced chicken, dried chili, cucumber, and fried peanuts",
+      "price": 6,
       "img": "blank.png",
-      "category": "chinese",
-      "page": 0
+      "category": "chinese"
     },
     {
       "id": 10,
-      "name": "egg burger",
-      "description": "Special burger with fried egg ",
-      "price": 8.5,
+      "name": "falafel plate",
+      "description": "With homemade hummus and falafel, vegetables, olives, feta, tahini sauce, and pita",
+      "price": 8,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 0
+      "category": "falafel"
     },
     {
       "id": 11,
-      "name": "Doughnuts",
-      "description": "With chocolade, caramel or strawberry icing",
-      "price": 2,
+      "name": "curry",
+      "description": "Curry with tofu or chicken",
+      "price": 9,
       "img": "blank.png",
-      "category": "desserts",
-      "page": 0
+      "category": "indian"
     },
     {
       "id": 12,
-      "name": "giga burger",
-      "description": "Traditional burger with extra meat",
+      "name": "chole bhature",
+      "description": "Spicy garbanzo bean and tomato gravy with the fluffy deep-fried flatbreads",
       "price": 10,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 1
+      "category": "indian"
     },
     {
       "id": 13,
-      "name": "roasted duck",
-      "description": "Crispy skin duck",
-      "price": 12,
+      "name": "utamaki",
+      "description": "8 rolls",
+      "price": 10,
       "img": "blank.png",
-      "category": "chinese",
-      "page": 1
+      "category": "japanese"
     },
     {
       "id": 14,
-      "name": "egg burger",
-      "description": "Special burger with fried egg ",
-      "price": 8.5,
+      "name": "nigiri",
+      "description": "6 rolls",
+      "price": 10,
       "img": "blank.png",
-      "category": "burgers",
-      "page": 2
+      "category": "japanese"
     },
     {
       "id": 15,
-      "name": "Doughnuts",
-      "description": "With chocolade, caramel or strawberry icing",
-      "price": 2,
+      "name": "ikura",
+      "description": "4 rolls",
+      "price": 10,
       "img": "blank.png",
-      "category": "desserts",
-      "page": 2
+      "category": "japanese"
+    },
+    {
+      "id": 16,
+      "name": "kimchi stew",
+      "description": "With pork, kimchi, and tofu",
+      "price": 9,
+      "img": "blank.png",
+      "category": "korean"
+    },
+    {
+      "id": 17,
+      "name": "glass noodle stir fry",
+      "description": "Sweet potato starch noodles with carrots, spinach, mushrooms, and onions",
+      "price": 7,
+      "img": "blank.png",
+      "category": "korean"
+    },
+    {
+      "id": 18,
+      "name": "bibimbap",
+      "description": "Rice and mixed vegetables",
+      "price": 6.5,
+      "img": "blank.png",
+      "category": "korean"
+    },
+    {
+      "id": 19,
+      "name": "chicken parm pasta",
+      "description": "Bacon, a flavorful panko topping, an easy doctored jarred sauce",
+      "price": 7.5,
+      "img": "blank.png",
+      "category": "pasta"
+    },
+    {
+      "id": 20,
+      "name": "penne",
+      "description": "Traditional penne with parmesan",
+      "price": 10,
+      "img": "blank.png",
+      "category": "pasta"
+    },
+    {
+      "id": 21,
+      "name": "Bucatini all'Amatriciana",
+      "description": "Traditional Italian pasta",
+      "price": 8.5,
+      "img": "blank.png",
+      "category": "pasta"
+    },
+    {
+      "id": 22,
+      "name": "grilled chop",
+      "description": "Best grilled beef",
+      "price": 10,
+      "img": "blank.png",
+      "category": "polish"
+    },
+    {
+      "id": 23,
+      "name": "dumplings",
+      "description": "Traditional Polish dumplings",
+      "price": 5,
+      "img": "blank.png",
+      "category": "polish"
     }
   ]
 }

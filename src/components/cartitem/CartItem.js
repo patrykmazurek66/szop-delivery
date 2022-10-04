@@ -1,8 +1,13 @@
+import { Button } from "@mui/material";
 import "./cartitem.css";
 
 export default function CartItem({ name, price, qty, refresh }) {
   const addToCart = item => {
-    item.quantity > 99 ? (item.quantity = 99) : () => {};
+    item.quantity > 99 ? (item.quantity = 99) : {};
+    if (item.quantity == 0) {
+      deleteFromCart(item.name);
+      return;
+    }
     let cart = [];
     let elements = 0;
     cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
@@ -25,7 +30,10 @@ export default function CartItem({ name, price, qty, refresh }) {
       <p className="item-name">{name}</p>
       <div className="item-container--righ-col">
         <div className="qty-container">
-          <div className="qty-container--minus">-</div>
+          <Button variant="outlined" size="small">
+            -
+          </Button>
+
           <input
             min={0}
             max={99}
@@ -43,7 +51,9 @@ export default function CartItem({ name, price, qty, refresh }) {
               refresh();
             }}
           />
-          <div className="qty-container--plus">+</div>
+          <Button variant="outlined" size="small">
+            +
+          </Button>
         </div>
         <p className="price">{(price * qty).toFixed(2)}$</p>
         <button
