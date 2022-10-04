@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Navbar />}>
           <Route index element={<MainPage />} />
           <Route path="cart" element={<CartPage />} />
-          <Route path="order" element={<OrderPage />} />
+          <Route path="cart/order" element={<OrderPage />} />
           <Route path="order-history" element={<OrderHisoryPage />} />
         </Route>
       </Routes>
