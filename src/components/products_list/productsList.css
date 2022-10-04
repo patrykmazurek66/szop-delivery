@@ -3,5 +3,5 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 20px;
-  gap: 20px;
+  gap: 20px 40px;
 }

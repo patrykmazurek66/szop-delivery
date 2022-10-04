@@ -7,14 +7,14 @@ import { useEffect, useState } from "react";
 export default function ProductsList() {
   const [items, setItems] = useState([]);
   const [allItems, setAllItems] = useState([]);
-  const [itemsAmount, setItemsAmount] = useState(5);
+  const [itemsAmount, setItemsAmount] = useState(6);
   const [maxItemsAmount, setMaxItemsAmount] = useState(0);
 
   async function getAllItems() {
     const itemsArr = await axiosGetItems("http://localhost:3000/items");
     setMaxItemsAmount(itemsArr.length);
     setAllItems(itemsArr);
-    setItems(itemsArr.slice(0, 5));
+    setItems(itemsArr.slice(0, 6));
   }
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function ProductsList() {
         <Button
           load
           onClick={() => {
-            setItemsAmount(itemsAmount + 5);
+            setItemsAmount(itemsAmount + 6);
           }}
         >
           Load more
