@@ -1,12 +1,14 @@
+import Div from "../div/Div";
+import P from "../p/P";
 import "./orderitem.css";
 
 export default function OrderItem({ qty, name, price }) {
   return (
-    <div className="order-item-container">
-      <p className="order-item-container-left">
+    <Div full nomp dark>
+      <P>
         {qty} × {name}
-      </p>
-      <p className="order-item-container-right">{(qty * price).toFixed(2)}$</p>
-    </div>
+      </P>
+      <P>{(qty * price).toFixed(2)}$</P>
+    </Div>
   );
 }

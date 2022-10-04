@@ -1,6 +1,8 @@
 import OrderItem from "../orderitem/OrderItem";
 import { useState, useEffect } from "react";
 import "./orderitemscontainer.css";
+import Div from "../div/Div";
+import P from "../p/P";
 
 export default function OrderItemsContainer() {
   const [cart, setCart] = useState([]);
@@ -37,14 +39,18 @@ export default function OrderItemsContainer() {
   }, [cart]);
 
   return (
-    <div className="order-items-container">
-      <p className="order-items-container--header">Your Order</p>
+    <Div outline column nomp>
+      <Div full nomp>
+        <P header>Your Order</P>
+      </Div>
 
-      <div className="order-items-container--items-list">{items}</div>
-      <div className="order-items-container--total-cost">
-        <p>Total</p>
-        <p>{cost.toFixed(2)}$</p>
-      </div>
-    </div>
+      <Div column nomp full>
+        {items}
+      </Div>
+      <Div full nomp>
+        <P>Total</P>
+        <P>{cost.toFixed(2)}$</P>
+      </Div>
+    </Div>
   );
 }

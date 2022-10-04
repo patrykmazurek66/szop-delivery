@@ -1,0 +1,13 @@
+.order-page-hero {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.order-page-hero--right-col {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
