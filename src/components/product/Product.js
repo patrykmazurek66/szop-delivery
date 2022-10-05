@@ -23,7 +23,14 @@ export default function Product({ name, imagePath, description, price }) {
         </div>
         <div className="product--price-btn">
           <p className="product-price">{price}$</p>
-          <Button small primary onClick={() => addToCart({ name, price, quantity: 1 })}>
+          <Button
+            small
+            primary
+            onClick={() => {
+              addToCart({ name, price, quantity: 1 });
+              alert(name + " has been added to your cart");
+            }}
+          >
             ADD +
           </Button>
         </div>

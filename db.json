@@ -1,16 +1,14 @@
 {
   "categories": [
-    "All",
-    "Burgers",
-    "Chinese",
-    "Desserts",
-    "Falafel",
-    "Indian",
-    "Japanese",
-    "Korean",
-    "Pasta",
-    "Polish",
-    "Vegetarian"
+    "burgers",
+    "chinese",
+    "desserts",
+    "falafel",
+    "indian",
+    "japanese",
+    "korean",
+    "pasta",
+    "polish"
   ],
   "items": [
     {
