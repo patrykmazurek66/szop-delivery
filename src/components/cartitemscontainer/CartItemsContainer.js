@@ -2,7 +2,7 @@ import CartItem from "../cartitem/CartItem";
 import { useState, useEffect } from "react";
 import "./cartitemscontainer.css";
 
-export default function CartItemsContainer() {
+export default function CartItemsContainer({ handler }) {
   const [cart, setCart] = useState([]);
   const [items, setItems] = useState([]);
   const [cost, setCost] = useState(0);
@@ -36,11 +36,18 @@ export default function CartItemsContainer() {
     );
   }, [cart]);
 
+  useEffect(() => {
+    handler(cost);
+  }, [cost]);
+
   return (
     <div className="cart-items-container">
       <p className="cart-items-container--header">Your Cart</p>
 
-      <div className="cart-items-container--items-list">{items}</div>
+      <div className="cart-items-container--items-list">
+        {items}
+        {cost === 0 && <h2>Your cart is empty! Buy something!</h2>}
+      </div>
       <div className="cart-items-container--total-cost">
         <p>Total</p>
         <p>{cost.toFixed(2)}$</p>
