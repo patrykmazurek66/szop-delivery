@@ -10,32 +10,28 @@ export default function OrderPaymentContainer() {
       <FormControl>
         <RadioGroup row defaultValue="payu" name="radio-buttons-group">
           <Div column>
-            <img src="blank.png" alt="blik" />
             <FormControlLabel
-              labelPlacement="bottom"
+              labelPlacement="top"
               value="blik"
               control={<Radio />}
-              label="BLIK"
+              label={<img src="/blank.png" alt="blik" />}
+              chi
             />
           </Div>
           <Div column>
-            <img src="blank.png" alt="payu" />
-
             <FormControlLabel
-              labelPlacement="bottom"
+              labelPlacement="top"
               value="payu"
               control={<Radio />}
-              label="PayU"
+              label={<img src="/blank.png" alt="payu" />}
             />
           </Div>
           <Div column>
-            <img src="blank.png" alt="cash" />
-
             <FormControlLabel
-              labelPlacement="bottom"
+              labelPlacement="top"
               value="cash"
               control={<Radio />}
-              label="Cash"
+              label={<img src="/blank.png" alt="cash" />}
             />
           </Div>
         </RadioGroup>

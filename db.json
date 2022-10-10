@@ -17,7 +17,14 @@
       "description": "Traditional burger with extra meat",
       "price": 10,
       "img": "blank.png",
-      "category": "burgers"
+      "category": "burgers",
+      "rating": 4,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 1,
@@ -25,7 +32,14 @@
       "description": "Crispy skin duck",
       "price": 12,
       "img": "blank.png",
-      "category": "chinese"
+      "category": "chinese",
+      "rating": 3,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 2,
@@ -33,7 +47,14 @@
       "description": "Special burger with fried egg ",
       "price": 8.5,
       "img": "blank.png",
-      "category": "burgers"
+      "category": "burgers",
+      "rating": 3.5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 3,
@@ -41,7 +62,14 @@
       "description": "Witch chocolade, caramel or strawberry icing",
       "price": 2,
       "img": "blank.png",
-      "category": "desserts"
+      "category": "desserts",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 4,
@@ -49,7 +77,14 @@
       "description": "Noodles, meat (chicken, beef, shrimp, or pork), onions, and celery",
       "price": 7,
       "img": "blank.png",
-      "category": "chinese"
+      "category": "chinese",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 5,
@@ -57,7 +92,14 @@
       "description": "Strawberries and cream",
       "price": 1.5,
       "img": "blank.png",
-      "category": "desserts"
+      "category": "desserts",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 6,
@@ -65,7 +107,14 @@
       "description": "Traditional burger",
       "price": 5,
       "img": "blank.png",
-      "category": "burgers"
+      "category": "burgers",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 7,
@@ -73,7 +122,14 @@
       "description": "Marinated chicken in a tomato gravy thick",
       "price": 11.5,
       "img": "blank.png",
-      "category": "indian"
+      "category": "indian",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 8,
@@ -81,7 +137,14 @@
       "description": "Combination of falafel balls, hummus, and a mixed green salad",
       "price": 6,
       "img": "blank.png",
-      "category": "falafel"
+      "category": "falafel",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 9,
@@ -89,7 +152,14 @@
       "description": "Diced chicken, dried chili, cucumber, and fried peanuts",
       "price": 6,
       "img": "blank.png",
-      "category": "chinese"
+      "category": "chinese",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 10,
@@ -97,7 +167,14 @@
       "description": "With homemade hummus and falafel, vegetables, olives, feta, tahini sauce, and pita",
       "price": 8,
       "img": "blank.png",
-      "category": "falafel"
+      "category": "falafel",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 11,
@@ -105,7 +182,14 @@
       "description": "Curry with tofu or chicken",
       "price": 9,
       "img": "blank.png",
-      "category": "indian"
+      "category": "indian",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 12,
@@ -113,7 +197,14 @@
       "description": "Spicy garbanzo bean and tomato gravy with the fluffy deep-fried flatbreads",
       "price": 10,
       "img": "blank.png",
-      "category": "indian"
+      "category": "indian",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 13,
@@ -121,7 +212,14 @@
       "description": "8 rolls",
       "price": 10,
       "img": "blank.png",
-      "category": "japanese"
+      "category": "japanese",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 14,
@@ -129,7 +227,14 @@
       "description": "6 rolls",
       "price": 10,
       "img": "blank.png",
-      "category": "japanese"
+      "category": "japanese",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 15,
@@ -137,7 +242,14 @@
       "description": "4 rolls",
       "price": 10,
       "img": "blank.png",
-      "category": "japanese"
+      "category": "japanese",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 16,
@@ -145,7 +257,14 @@
       "description": "With pork, kimchi, and tofu",
       "price": 9,
       "img": "blank.png",
-      "category": "korean"
+      "category": "korean",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 17,
@@ -153,7 +272,14 @@
       "description": "Sweet potato starch noodles with carrots, spinach, mushrooms, and onions",
       "price": 7,
       "img": "blank.png",
-      "category": "korean"
+      "category": "korean",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 18,
@@ -161,7 +287,14 @@
       "description": "Rice and mixed vegetables",
       "price": 6.5,
       "img": "blank.png",
-      "category": "korean"
+      "category": "korean",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 19,
@@ -169,7 +302,14 @@
       "description": "Bacon, a flavorful panko topping, an easy doctored jarred sauce",
       "price": 7.5,
       "img": "blank.png",
-      "category": "pasta"
+      "category": "pasta",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 20,
@@ -177,7 +317,14 @@
       "description": "Traditional penne with parmesan",
       "price": 10,
       "img": "blank.png",
-      "category": "pasta"
+      "category": "pasta",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 21,
@@ -185,7 +332,14 @@
       "description": "Traditional Italian pasta",
       "price": 8.5,
       "img": "blank.png",
-      "category": "pasta"
+      "category": "pasta",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 22,
@@ -193,7 +347,14 @@
       "description": "Best grilled beef",
       "price": 10,
       "img": "blank.png",
-      "category": "polish"
+      "category": "polish",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     },
     {
       "id": 23,
@@ -201,7 +362,14 @@
       "description": "Traditional Polish dumplings",
       "price": 5,
       "img": "blank.png",
-      "category": "polish"
+      "category": "polish",
+      "rating": 5,
+      "nutrition": {
+        "calories": 520,
+        "fat": 5,
+        "proteins": 20,
+        "carbohydrates": 70
+      }
     }
   ]
 }

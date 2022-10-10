@@ -5,7 +5,7 @@ import Footer from "../footer/Footer";
 import OrderItemsContainer from "../orderitemscontainer/OrderItemsContainer";
 import OrderPaymentContainer from "../orderpaymentcontainer/OrderPaymentContainer";
 import Div from "../div/Div";
-import Button from "../button/Button";
+import { Button } from "@mui/material";
 
 export default function OrderPage() {
   return (
@@ -17,9 +17,7 @@ export default function OrderPage() {
         <Div column medium>
           <ContactDataContainer />
           <OrderPaymentContainer />
-          <Button load primary>
-            ORDER
-          </Button>
+          <Button variant="contained">Order</Button>
         </Div>
       </Div>
       <Footer />

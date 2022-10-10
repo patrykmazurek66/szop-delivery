@@ -1,0 +1,71 @@
+.product-modal-container {
+  width: 800px;
+  height: 400px;
+  background-color: var(--main50);
+  position: absolute;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 400px);
+  color: var(--main900);
+  display: flex;
+  flex-direction: row;
+}
+
+.product-modal-container--product-image {
+  width: 350px;
+  height: 400px;
+
+  object-fit: cover;
+}
+.product-modal-container--right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  height: 400px;
+  margin: 0 50px;
+}
+.product-modal-container--item-name {
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 0;
+  text-align: center;
+}
+.product-modal-container--rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.product-modal-container--rating p {
+  margin: 0;
+}
+.product-modal-container--price {
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-modal-container--description {
+  font-size: 15px;
+}
+.product-modal-container--nutrition-container {
+  /* background-color: #ffffff50; */
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.product-modal-container--nutrition-container h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+
+.product-modal-container--nutrition-container--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5px;
+  border-bottom: 1px var(--main300) solid;
+}
