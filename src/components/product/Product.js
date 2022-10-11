@@ -35,7 +35,10 @@ export default function Product({ name, imagePath, description, price, rating, n
 
   return (
     <div className="product-container">
-      <img src={imagePath} alt={name} className="product--img" />
+      <Button onClick={handleOpenModal} sx={{ padding: 0, border: "none" }}>
+        <img src={"/food/thumbnails/" + imagePath} alt={name} className="product--img" />
+      </Button>
+
       <div className="product--right-col">
         <div className="product--name-desc">
           <Button variant="text" className="product-name" onClick={handleOpenModal}>
@@ -66,14 +69,16 @@ export default function Product({ name, imagePath, description, price, rating, n
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <ProductModal
-          name={name}
-          imgPath={imagePath}
-          description={description}
-          price={price}
-          rating={rating}
-          nutrition={nutrition}
-        />
+        <div>
+          <ProductModal
+            name={name}
+            imgPath={imagePath}
+            description={description}
+            price={price}
+            rating={rating}
+            nutrition={nutrition}
+          />
+        </div>
       </Modal>
     </div>
   );

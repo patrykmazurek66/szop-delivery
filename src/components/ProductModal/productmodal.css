@@ -8,6 +8,8 @@
   color: var(--main900);
   display: flex;
   flex-direction: row;
+  border: 1px var(--main900) solid;
+  overflow: hidden;
 }
 
 .product-modal-container--product-image {

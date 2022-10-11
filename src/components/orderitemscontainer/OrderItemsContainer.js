@@ -46,10 +46,13 @@ export default function OrderItemsContainer() {
 
       <Div column nomp full>
         {items}
+        <Div nomp dark full>
+          Delivery 5$
+        </Div>
       </Div>
       <Div full nomp>
         <P>Total</P>
-        <P>{cost.toFixed(2)}$</P>
+        <P>{(cost + 5).toFixed(2)}$</P>
       </Div>
     </Div>
   );
