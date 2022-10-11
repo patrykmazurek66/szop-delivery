@@ -16,7 +16,7 @@
       "name": "giga burger",
       "description": "Traditional burger with extra meat",
       "price": 10,
-      "img": "blank.png",
+      "img": "giga-burger.jpg",
       "category": "burgers",
       "rating": 4,
       "nutrition": {
@@ -31,7 +31,7 @@
       "name": "roasted duck",
       "description": "Crispy skin duck",
       "price": 12,
-      "img": "blank.png",
+      "img": "roasted-duck.jpg",
       "category": "chinese",
       "rating": 3,
       "nutrition": {
@@ -46,7 +46,7 @@
       "name": "egg burger",
       "description": "Special burger with fried egg ",
       "price": 8.5,
-      "img": "blank.png",
+      "img": "egg-burger.jpg",
       "category": "burgers",
       "rating": 3.5,
       "nutrition": {
@@ -61,7 +61,7 @@
       "name": "Doughnuts",
       "description": "Witch chocolade, caramel or strawberry icing",
       "price": 2,
-      "img": "blank.png",
+      "img": "doughnuts.jpg",
       "category": "desserts",
       "rating": 5,
       "nutrition": {
@@ -76,7 +76,7 @@
       "name": "chow mein",
       "description": "Noodles, meat (chicken, beef, shrimp, or pork), onions, and celery",
       "price": 7,
-      "img": "blank.png",
+      "img": "chow-mein.jpg",
       "category": "chinese",
       "rating": 5,
       "nutrition": {
@@ -91,7 +91,7 @@
       "name": "strawberry fool",
       "description": "Strawberries and cream",
       "price": 1.5,
-      "img": "blank.png",
+      "img": "strawberry-fool.jpg",
       "category": "desserts",
       "rating": 5,
       "nutrition": {
@@ -106,7 +106,7 @@
       "name": "burger",
       "description": "Traditional burger",
       "price": 5,
-      "img": "blank.png",
+      "img": "burger.jpg",
       "category": "burgers",
       "rating": 5,
       "nutrition": {
@@ -121,7 +121,7 @@
       "name": "butter chicken",
       "description": "Marinated chicken in a tomato gravy thick",
       "price": 11.5,
-      "img": "blank.png",
+      "img": "butter-chicken.jpg",
       "category": "indian",
       "rating": 5,
       "nutrition": {
@@ -136,7 +136,7 @@
       "name": "falafel in tortilla",
       "description": "Combination of falafel balls, hummus, and a mixed green salad",
       "price": 6,
-      "img": "blank.png",
+      "img": "falafel-in-tortilla.jpg",
       "category": "falafel",
       "rating": 5,
       "nutrition": {
@@ -151,7 +151,7 @@
       "name": "kung pao chicken",
       "description": "Diced chicken, dried chili, cucumber, and fried peanuts",
       "price": 6,
-      "img": "blank.png",
+      "img": "kung-pao-chicken.jpg",
       "category": "chinese",
       "rating": 5,
       "nutrition": {
@@ -166,7 +166,7 @@
       "name": "falafel plate",
       "description": "With homemade hummus and falafel, vegetables, olives, feta, tahini sauce, and pita",
       "price": 8,
-      "img": "blank.png",
+      "img": "falafel-plate.jpg",
       "category": "falafel",
       "rating": 5,
       "nutrition": {
@@ -181,7 +181,7 @@
       "name": "curry",
       "description": "Curry with tofu or chicken",
       "price": 9,
-      "img": "blank.png",
+      "img": "curry.jpg",
       "category": "indian",
       "rating": 5,
       "nutrition": {
@@ -196,7 +196,7 @@
       "name": "chole bhature",
       "description": "Spicy garbanzo bean and tomato gravy with the fluffy deep-fried flatbreads",
       "price": 10,
-      "img": "blank.png",
+      "img": "chole-bhature.jpg",
       "category": "indian",
       "rating": 5,
       "nutrition": {
@@ -211,7 +211,7 @@
       "name": "utamaki",
       "description": "8 rolls",
       "price": 10,
-      "img": "blank.png",
+      "img": "utamaki.jpg",
       "category": "japanese",
       "rating": 5,
       "nutrition": {
@@ -226,7 +226,7 @@
       "name": "nigiri",
       "description": "6 rolls",
       "price": 10,
-      "img": "blank.png",
+      "img": "nigiri.jpg",
       "category": "japanese",
       "rating": 5,
       "nutrition": {
@@ -241,7 +241,7 @@
       "name": "ikura",
       "description": "4 rolls",
       "price": 10,
-      "img": "blank.png",
+      "img": "ikura.jpg",
       "category": "japanese",
       "rating": 5,
       "nutrition": {
@@ -256,7 +256,7 @@
       "name": "kimchi stew",
       "description": "With pork, kimchi, and tofu",
       "price": 9,
-      "img": "blank.png",
+      "img": "kimchi-stew.jpg",
       "category": "korean",
       "rating": 5,
       "nutrition": {
@@ -271,7 +271,7 @@
       "name": "glass noodle stir fry",
       "description": "Sweet potato starch noodles with carrots, spinach, mushrooms, and onions",
       "price": 7,
-      "img": "blank.png",
+      "img": "glass-noodle-stir-fry.jpg",
       "category": "korean",
       "rating": 5,
       "nutrition": {
@@ -286,7 +286,7 @@
       "name": "bibimbap",
       "description": "Rice and mixed vegetables",
       "price": 6.5,
-      "img": "blank.png",
+      "img": "bibimbap.jpg",
       "category": "korean",
       "rating": 5,
       "nutrition": {
@@ -301,7 +301,7 @@
       "name": "chicken parm pasta",
       "description": "Bacon, a flavorful panko topping, an easy doctored jarred sauce",
       "price": 7.5,
-      "img": "blank.png",
+      "img": "chicken-parm-pasta.jpg",
       "category": "pasta",
       "rating": 5,
       "nutrition": {
@@ -316,7 +316,7 @@
       "name": "penne",
       "description": "Traditional penne with parmesan",
       "price": 10,
-      "img": "blank.png",
+      "img": "penne.jpg",
       "category": "pasta",
       "rating": 5,
       "nutrition": {
@@ -331,7 +331,7 @@
       "name": "Bucatini all'Amatriciana",
       "description": "Traditional Italian pasta",
       "price": 8.5,
-      "img": "blank.png",
+      "img": "bucatini-allamatriciana.jpg",
       "category": "pasta",
       "rating": 5,
       "nutrition": {
@@ -346,7 +346,7 @@
       "name": "grilled chop",
       "description": "Best grilled beef",
       "price": 10,
-      "img": "blank.png",
+      "img": "grilled-chop.jpg",
       "category": "polish",
       "rating": 5,
       "nutrition": {
@@ -361,7 +361,7 @@
       "name": "dumplings",
       "description": "Traditional Polish dumplings",
       "price": 5,
-      "img": "blank.png",
+      "img": "dumplings.jpg",
       "category": "polish",
       "rating": 5,
       "nutrition": {

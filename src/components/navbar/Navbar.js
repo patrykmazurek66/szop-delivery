@@ -1,8 +1,13 @@
 import { Badge } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
 import "./navbar.css";
+import { useContext } from "react";
+import CartItemsContext from "../cartitemscontext/CartItemsContext";
+import HistoryIcon from "@mui/icons-material/History";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function Navbar() {
+  const items = useContext(CartItemsContext);
   return (
     <>
       <nav>
@@ -11,10 +16,9 @@ export default function Navbar() {
         </Link>
         <h1 className="nav--app-name">SZOP-DELIVERY</h1>
         <div className="nav--icons-container">
-          <img src={require("../../content/AccountCircleFilled.svg").default} alt="account" />
           <Badge
             overlap="circular"
-            badgeContent={69}
+            badgeContent={items}
             max={99}
             color="primary"
             anchorOrigin={{
@@ -23,11 +27,11 @@ export default function Navbar() {
             }}
           >
             <Link to="/cart">
-              <img src={require("../../content/ShoppingCartFilled.svg").default} alt="cart" />
+              <ShoppingCartIcon sx={{ fontSize: "40px" }} />
             </Link>
           </Badge>
           <Link to="/order-history">
-            <img src={require("../../content/DateRangeFilled.svg").default} alt="history" />
+            <HistoryIcon sx={{ fontSize: "40px" }} />
           </Link>
         </div>
       </nav>

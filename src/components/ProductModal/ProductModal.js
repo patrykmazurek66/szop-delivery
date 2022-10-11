@@ -2,6 +2,7 @@ import "./productmodal.css";
 import StarIcon from "@mui/icons-material/Star";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
+// import { CircularProgress } from "@mui/material";
 
 import { useState, useEffect } from "react";
 
@@ -9,23 +10,31 @@ export default function ProductModal({ name, imgPath, description, rating, price
   const [ratingStars, setRatingStars] = useState([]);
 
   useEffect(() => {
-    let tempRating = [];
+    const tempRating = [];
     for (let i = 0; i < Math.floor(rating); i++) {
-      tempRating.push(<StarIcon fontSize="inherit" />);
+      tempRating.push(<StarIcon fontSize="inherit" key={i} />);
     }
 
-    Math.floor(rating) < rating ? tempRating.push(<StarHalfIcon fontSize="inherit" />) : {};
+    Math.floor(rating) < rating
+      ? tempRating.push(<StarHalfIcon fontSize="inherit" key={rating} />)
+      : {};
 
     for (let i = Math.ceil(rating); i < 5; i++) {
-      tempRating.push(<StarBorderIcon fontSize="inherit" sx={{ color: "var(--main600)" }} />);
+      tempRating.push(
+        <StarBorderIcon fontSize="inherit" sx={{ color: "var(--main600)" }} key={i} />
+      );
     }
-    console.log(tempRating, rating);
     setRatingStars(tempRating);
   }, []);
 
   return (
     <div className="product-modal-container">
-      <img src={imgPath} alt={name} className="product-modal-container--product-image" />
+      <img
+        src={"/food/" + imgPath}
+        alt={name}
+        className="product-modal-container--product-image"
+        loading="lazy"
+      />
       <div className="product-modal-container--right-col">
         <h2 className="product-modal-container--item-name">{name}</h2>
         <div className="product-modal-container--rating">

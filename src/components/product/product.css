@@ -15,7 +15,8 @@
 .product--img {
   width: 140px;
   height: 100%;
-  border: 1px var(--main900) solid;
+  border-right: 1px var(--main900) solid;
+  object-fit: cover;
 }
 
 .product--right-col {

@@ -14,8 +14,7 @@ export default function OrderPaymentContainer() {
               labelPlacement="top"
               value="blik"
               control={<Radio />}
-              label={<img src="/blank.png" alt="blik" />}
-              chi
+              label={<img src="/payment/blik.png" alt="blik" width="100px" height="100px" />}
             />
           </Div>
           <Div column>
@@ -23,7 +22,7 @@ export default function OrderPaymentContainer() {
               labelPlacement="top"
               value="payu"
               control={<Radio />}
-              label={<img src="/blank.png" alt="payu" />}
+              label={<img src="/payment/payu.png" alt="payu" width="100px" height="100px" />}
             />
           </Div>
           <Div column>
@@ -31,7 +30,7 @@ export default function OrderPaymentContainer() {
               labelPlacement="top"
               value="cash"
               control={<Radio />}
-              label={<img src="/blank.png" alt="cash" />}
+              label={<img src="/payment/cash.png" alt="cash" width="100px" height="100px" />}
             />
           </Div>
         </RadioGroup>

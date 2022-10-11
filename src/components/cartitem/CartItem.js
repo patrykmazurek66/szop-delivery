@@ -1,9 +1,21 @@
 import { Button } from "@mui/material";
+
+import { useState, useEffect } from "react";
 import "./cartitem.css";
 
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 export default function CartItem({ name, price, qty, refresh }) {
+  const [itemQuantity, setItemQuantity] = useState(qty);
+
+  useEffect(() => {
+    addToCart({ name, price, quantity: itemQuantity });
+    refresh();
+  }, [itemQuantity]);
+
   const addToCart = item => {
-    item.quantity > 99 ? (item.quantity = 99) : {};
     if (item.quantity == 0) {
       deleteFromCart(item.name);
       return;
@@ -30,43 +42,37 @@ export default function CartItem({ name, price, qty, refresh }) {
       <p className="item-name">{name}</p>
       <div className="item-container--righ-col">
         <div className="qty-container">
-          <Button variant="outlined" size="small">
-            -
+          <Button
+            variant="text"
+            size="small"
+            onClick={() => {
+              setItemQuantity(itemQuantity - 1);
+            }}
+          >
+            <RemoveIcon />
           </Button>
 
-          <input
-            min={0}
-            max={99}
-            required
-            type="number"
-            className="qty-container--qty"
-            data-itemname={name}
-            data-itemprice={price}
-            value={qty}
-            onChange={e => {
-              const name = e.target.getAttribute("data-itemname");
-              const price = e.target.getAttribute("data-itemprice");
-              const quantity = e.target.value;
-              addToCart({ name, price, quantity });
-              refresh();
+          <input min={0} required className="qty-container--qty" value={itemQuantity} readOnly />
+          <Button
+            variant="text"
+            size="small"
+            onClick={() => {
+              setItemQuantity(itemQuantity + 1);
             }}
-          />
-          <Button variant="outlined" size="small">
-            +
+          >
+            <AddIcon />
           </Button>
         </div>
         <p className="price">{(price * qty).toFixed(2)}$</p>
-        <button
+        <Button
           className="delete-item"
-          data-itemname={name}
-          onClick={e => {
-            const name = e.target.getAttribute("data-itemname");
+          onClick={() => {
             deleteFromCart(name);
             refresh();
           }}
         >
-          X
-        </button>
+          <DeleteIcon />
+        </Button>
       </div>
     </div>
   );
