@@ -67,7 +67,7 @@ export default function ProductsList({ categories, sortType }) {
 
   useEffect(() => {
     setMaxItemsAmount(filteredItems.length);
-    // console.log("filtered:", filteredItems);
+    console.log("filtered:", filteredItems);
   }, [filteredItems]);
 
   useEffect(() => {

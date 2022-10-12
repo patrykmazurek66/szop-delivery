@@ -11,7 +11,11 @@ footer {
 
   margin-top: 50px;
 
-  justify-self: end;
+  position: absolute;
+
+  /* position: sticky; */
+  /* top: calc(100vh - 70px); */
+  bottom: 0px;
 }
 
 .footer--links-container {

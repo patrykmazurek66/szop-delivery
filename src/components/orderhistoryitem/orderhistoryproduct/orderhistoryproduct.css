@@ -1,0 +1,42 @@
+.order-history-product--container {
+  position: relative;
+  background-color: var(--main50);
+  height: 180px;
+  border-bottom: 1px var(--main900) solid;
+  display: flex;
+  padding: 18px;
+}
+.order-history-product--img {
+  width: 126px;
+  height: 144px;
+  object-fit: cover;
+}
+.order-history-product--name-qty {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.order-history-product--name {
+  font-size: 20px;
+  color: var(--main900);
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.order-history-product--quantity {
+  font-size: 18px;
+  color: var(--main700);
+  font-weight: 300;
+}
+.order-history-product--cost {
+  margin-right: 20px;
+  font-size: 25px;
+  color: var(--main900);
+  font-weight: 700;
+
+  position: absolute;
+  top: calc(50% - 19px);
+  right: 15px;
+}

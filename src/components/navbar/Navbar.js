@@ -8,10 +8,14 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function Navbar() {
   const items = useContext(CartItemsContext);
+
+  const refreshPage = () => {
+    location.pathname === "/" ? window.location.reload(true) : null;
+  };
   return (
     <>
       <nav>
-        <Link to="/">
+        <Link to="/" onClick={refreshPage}>
           <img src="/logo.png" alt="logo" className="nav--logo" />
         </Link>
         <h1 className="nav--app-name">SZOP-DELIVERY</h1>

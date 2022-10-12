@@ -1,4 +1,68 @@
 {
+  "orders": [
+    {
+      "cart": [
+        {
+          "name": "Bucatini all'Amatriciana",
+          "price": 8.5,
+          "quantity": 1
+        },
+        {
+          "name": "burger",
+          "price": 5,
+          "quantity": 1
+        },
+        {
+          "name": "egg burger",
+          "price": 8.5,
+          "quantity": 1
+        },
+        {
+          "name": "giga burger",
+          "price": 10,
+          "quantity": 1
+        },
+        {
+          "name": "ikura",
+          "price": 10,
+          "quantity": 3
+        }
+      ],
+      "details": {
+        "name": "Patryk Mazurek",
+        "company": "Capgemini",
+        "address1": "ulica 1",
+        "postalCode": "12-500",
+        "email": "mail@me.com",
+        "phone": "123456789",
+        "address2": "9",
+        "city": "Wroclove",
+        "paymentMethod": "cash"
+      },
+      "id": "1665576274906"
+    },
+    {
+      "cart": [
+        {
+          "name": "nigiri",
+          "price": 10,
+          "quantity": 3
+        }
+      ],
+      "details": {
+        "name": "Hipolina Szopinska",
+        "company": "",
+        "address1": "ulcia 55",
+        "postalCode": "69-420",
+        "email": "szop@hipp.com",
+        "phone": "6969696969",
+        "address2": "",
+        "city": "Poznan",
+        "paymentMethod": "payu"
+      },
+      "id": "1665576776649"
+    }
+  ],
   "categories": [
     "burgers",
     "chinese",
@@ -59,7 +123,7 @@
     {
       "id": 3,
       "name": "Doughnuts",
-      "description": "Witch chocolade, caramel or strawberry icing",
+      "description": "With chocolade, caramel or strawberry icing",
       "price": 2,
       "img": "doughnuts.jpg",
       "category": "desserts",

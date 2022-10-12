@@ -1,0 +1,36 @@
+.order-history-info-container {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  background-color: var(--main100);
+}
+
+.order-history-info--id {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--main700);
+}
+.order-history-info--date {
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--main900);
+}
+.order-history-info--total {
+  position: absolute;
+  top: calc(50% - 16px);
+  right: 70px;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--main900);
+}
+.order-history-info--more-icon {
+  position: absolute;
+  top: calc(50% - 17px);
+  right: 15px;
+}
