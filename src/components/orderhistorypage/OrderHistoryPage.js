@@ -1,29 +1,38 @@
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import "./orderhistorypage.css";
+
 import Footer from "../footer/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { axiosGetOrderHistory } from "../communicate/Comm";
+import OrderHistoryItem from "../orderhistoryitem/OrderHistoryItem";
 
 export default function OrderHisoryPage() {
-  const [formats, setFormats] = useState(["bold", "italic"]);
+  const [orderHistory, setOrderHistory] = useState([]);
 
-  const handleFormat = (event, newFormats) => {
-    setFormats(newFormats);
-  };
+  async function getOrderHistory() {
+    const tempHistory = await axiosGetOrderHistory("http://localhost:3000/orders");
+    console.log(tempHistory);
+    setOrderHistory(tempHistory);
+  }
+
+  useEffect(() => {
+    getOrderHistory();
+  }, []);
 
   return (
-    <>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <ToggleButtonGroup value={formats} onChange={handleFormat}>
-        <ToggleButton value="1">1</ToggleButton>
-        <ToggleButton value="2">2</ToggleButton>
-        <ToggleButton value="3">3</ToggleButton>
-        <ToggleButton value="4" disabled>
-          4
-        </ToggleButton>
-      </ToggleButtonGroup>
+    <div className="page">
+      {orderHistory.length !== 0 ? (
+        <div className="orders-container">
+          {orderHistory.map((item, index) => {
+            return <OrderHistoryItem key={index} item={item} />;
+          })}
+        </div>
+      ) : (
+        <div className="empty-history-container">
+          <p>THERE IS NO HISTORY!</p>
+          <p>Consider buying something :)</p>
+        </div>
+      )}
       <Footer />
-    </>
+    </div>
   );
 }
