@@ -3,26 +3,24 @@ import "./orderpage.css";
 import ContactDataContainer from "../contactdatacontainer/ContactDataContainer";
 import Footer from "../footer/Footer";
 import OrderItemsContainer from "../orderitemscontainer/OrderItemsContainer";
-// import OrderPaymentContainer from "../orderpaymentcontainer/OrderPaymentContainer";
 import Div from "../div/Div";
 import { Button } from "@mui/material";
 
 export default function OrderPage() {
   return (
-    <>
-      <Div row>
+    <div className="order-page">
+      <div className="order-page-hero">
         <Div column>
           <OrderItemsContainer />
         </Div>
         <Div column medium>
           <ContactDataContainer />
-          {/* <OrderPaymentContainer /> */}
-          <Button variant="contained" form="data-form" type="submit">
+          <Button variant="contained" type="submit" form="data-form">
             Order
           </Button>
         </Div>
-      </Div>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }

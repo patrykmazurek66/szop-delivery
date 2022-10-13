@@ -5,11 +5,20 @@
   gap: 50px;
   padding-top: 50px;
 }
-.page {
+.order-history-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: calc(100vh - 70px);
-  position: relative;
 }
 .empty-history-container {
   margin-top: 100px;
   text-align: center;
+}
+.order-history-page-top {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }

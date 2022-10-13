@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CartPage from "../cartpage/CartPage";
 import MainPage from "../mainpage/MainPage";
@@ -9,10 +9,13 @@ import OrderPage from "../orderpage/OrderPage";
 import CartItemsContext from "../cartitemscontext/CartItemsContext";
 
 function App() {
-  // eslint-disable-next-line
-  const [cartItems, setCartItems] = useState(
-    JSON.parse(localStorage.cart).reduce((acc, item) => acc + item.quantity, 0)
-  );
+  const [cartItems, setCartItems] = useState(0);
+
+  useEffect(() => {
+    localStorage.cart
+      ? setCartItems(JSON.parse(localStorage.cart).reduce((acc, item) => acc + item.quantity, 0))
+      : null;
+  }, []);
 
   return (
     <CartItemsContext.Provider value={cartItems}>

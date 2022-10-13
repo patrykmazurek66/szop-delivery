@@ -10,7 +10,6 @@ export default function OrderHisoryPage() {
 
   async function getOrderHistory() {
     const tempHistory = await axiosGetOrderHistory("http://localhost:3000/orders");
-    console.log(tempHistory);
     setOrderHistory(tempHistory);
   }
 
@@ -19,19 +18,21 @@ export default function OrderHisoryPage() {
   }, []);
 
   return (
-    <div className="page">
-      {orderHistory.length !== 0 ? (
-        <div className="orders-container">
-          {orderHistory.map((item, index) => {
-            return <OrderHistoryItem key={index} item={item} />;
-          })}
-        </div>
-      ) : (
-        <div className="empty-history-container">
-          <p>THERE IS NO HISTORY!</p>
-          <p>Consider buying something :)</p>
-        </div>
-      )}
+    <div className="order-history-page">
+      <div className="order-history-page-top">
+        {orderHistory.length !== 0 ? (
+          <div className="orders-container">
+            {orderHistory.map((item, index) => {
+              return <OrderHistoryItem key={index} item={item} />;
+            })}
+          </div>
+        ) : (
+          <div className="empty-history-container">
+            <p>THERE IS NO HISTORY!</p>
+            <p>Consider buying something :)</p>
+          </div>
+        )}
+      </div>
       <Footer />
     </div>
   );

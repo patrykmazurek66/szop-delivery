@@ -3,6 +3,7 @@
   background-color: var(--main100);
   color: var(--main900);
   width: 675px;
+  margin-bottom: 20px;
 }
 
 .cart-items-container--header {
