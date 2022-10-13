@@ -25,6 +25,7 @@ export function axiosPostOrder(data) {
   const orderDetails = { details: data };
   const newId = { id: dateString };
   const dataToPost = Object.assign(Object.assign(orderCart, orderDetails), newId);
-  console.log(dateString, dataToPost);
-  axios.post("http://localhost:3000/orders", dataToPost).then(res => console.log(res.data.id));
+  axios.post("http://localhost:3000/orders", dataToPost).then(() => {
+    localStorage.setItem("cart", "[]");
+  });
 }

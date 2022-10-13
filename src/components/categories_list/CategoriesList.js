@@ -28,7 +28,7 @@ export default function CategoriesList({ handler }) {
 
   return (
     <div className="categories-list">
-      <h2 className="categories-header">Categories</h2>
+      <h2 className="categories-list-header">Categories</h2>
       <ToggleButtonGroup value={activeCategories} orientation="vertical" onChange={handleChange}>
         {categories.map(cat => (
           <ToggleButton key={cat} value={cat} color="primary" size="large">

@@ -32,6 +32,10 @@ nav {
   color: var(--main900);
   font-weight: bold;
   font-size: 48px;
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  left: calc(50% - 200px);
 }
 .nav--icons-container {
   align-items: center;

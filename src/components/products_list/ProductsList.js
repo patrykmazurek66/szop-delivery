@@ -55,20 +55,22 @@ export default function ProductsList({ categories, sortType }) {
     // console.log(categories, sortType);
     if (categories.length === 0) {
       // console.log(sortType);
-      setFilteredItems(sortItems(allItems));
+      const itemsArr = sortItems(allItems);
+      setFilteredItems(sortItems(itemsArr));
     } else {
       const itemsArr = allItems.filter(item => {
         return categories.includes(item.category);
       });
-      // console.log(sortItems(itemsArr, sortType));
       setFilteredItems(sortItems(itemsArr));
     }
+    // console.log(sortType);
   }, [categories, sortType]);
 
   useEffect(() => {
     setMaxItemsAmount(filteredItems.length);
-    console.log("filtered:", filteredItems);
-  }, [filteredItems]);
+    setItems(filteredItems.slice(0, itemsAmount));
+    // console.log("filtered or sorted:", filteredItems);
+  }, [filteredItems, sortType]);
 
   useEffect(() => {
     setItemsAmount(itemsPerPage > filteredItems.length ? filteredItems.length : itemsPerPage);
@@ -77,43 +79,6 @@ export default function ProductsList({ categories, sortType }) {
   useEffect(() => {
     setItems(filteredItems.slice(0, itemsAmount));
   }, [itemsAmount]);
-
-  // useEffect(() => {
-  //   setItems(filteredItems.slice(0, itemsAmount));
-  // }, [itemsAmount]);
-
-  // useEffect(() => {
-  //   if (categories.length === 0) {
-  //     setFilteredItems(allItems);
-  //   } else {
-  //     const itemsArr = allItems.filter(item => {
-  //       return categories.includes(item.category);
-  //     });
-  //     console.log(sortItems(itemsArr, sortType));
-  //     setFilteredItems(sortItems(itemsArr, sortType));
-  //   }
-  // }, [categories]);
-
-  // useEffect(() => {
-  //   setMaxItemsAmount(filteredItems.length);
-  //   // setItems(
-  //   //   filteredItems.slice(
-  //   //     0,
-  //   //     itemsPerPage > filteredItems.length ? filteredItems.length : itemsPerPage
-  //   //   )
-  //   // );
-  //   setItemsAmount(itemsPerPage > filteredItems.length ? filteredItems.length : itemsPerPage);
-  // }, [filteredItems]);
-
-  // useEffect(() => {
-  //   setFilteredItems(sortItems(filteredItems, sortType));
-  //   // setItems(
-  //   //   filteredItems.slice(
-  //   //     0,
-  //   //     itemsPerPage > filteredItems.length ? filteredItems.length : itemsPerPage
-  //   //   )
-  //   // );
-  // }, [sortType]);
 
   return (
     <div>

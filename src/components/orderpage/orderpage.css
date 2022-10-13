@@ -1,3 +1,10 @@
+.order-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 70px);
+}
+
 .order-page-hero {
   margin-top: 50px;
   display: flex;

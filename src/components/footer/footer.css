@@ -1,21 +1,30 @@
 footer {
   width: 100%;
-  height: 70px;
+  height: 130px;
 
-  background-color: var(--main300);
+  background-color: none;
 
-  color: var(--main900);
+  color: none;
   text-align: center;
 
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  /* margin-top: 50px; */
 
-  margin-top: 50px;
-
-  position: absolute;
-
-  /* position: sticky; */
-  /* top: calc(100vh - 70px); */
+  position: relative;
   bottom: 0px;
+}
+.footer-gap {
+  height: 50px;
+  width: 100%;
+  background-color: none;
+}
+
+.footer-content {
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  height: 70px;
+  width: 100%;
+  background-color: var(--main300);
+  position: absolute;
+  bottom: 0;
 }
 
 .footer--links-container {

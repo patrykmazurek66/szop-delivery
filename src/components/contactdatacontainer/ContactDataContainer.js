@@ -5,17 +5,21 @@ import P from "../p/P";
 import Div from "../div/Div";
 import { FormControl, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 import { axiosPostOrder } from "../communicate/Comm";
+import { useNavigate } from "react-router-dom";
 export default function ContactDataContainer() {
   const { register, handleSubmit } = useForm();
-  // eslint-disable-next-line no-unused-vars
-  const [data, setData] = useState("");
-
+  const navigate = useNavigate();
   return (
     <Div column outline>
       <P header>Contact Data</P>
-      <form onSubmit={handleSubmit(data => axiosPostOrder(data))} id="data-form">
+      <form
+        onSubmit={handleSubmit(data => {
+          axiosPostOrder(data);
+          navigate("/");
+        })}
+        id="data-form"
+      >
         <Div row>
           <Div column nomp>
             <TextField
@@ -94,7 +98,7 @@ export default function ContactDataContainer() {
           </Div>
         </Div>
         <FormControl>
-          <RadioGroup row defaultValue="payu" name="radio-buttons-group">
+          <RadioGroup row defaultValue="payU" name="radio-buttons-group" required>
             <Div column>
               <FormControlLabel
                 {...register("paymentMethod")}
