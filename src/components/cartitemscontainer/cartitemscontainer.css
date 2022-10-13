@@ -20,3 +20,6 @@
   justify-content: space-between;
   padding: 0 10px;
 }
+.cart-items-container--items-list {
+  text-align: center;
+}

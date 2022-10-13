@@ -46,11 +46,14 @@ export default function CartItemsContainer({ handler }) {
 
       <div className="cart-items-container--items-list">
         {items}
-        {cost === 0 && <h2>Your cart is empty! Buy something!</h2>}
-      </div>
-      <div className="cart-items-container--total-cost">
-        <p>Total</p>
-        <p>{cost.toFixed(2)}$</p>
+        {cost === 0 ? (
+          <h2>Your cart is empty! Buy something!</h2>
+        ) : (
+          <div className="cart-items-container--total-cost">
+            <p>Total</p>
+            <p>{cost.toFixed(2)}$</p>
+          </div>
+        )}
       </div>
     </div>
   );
