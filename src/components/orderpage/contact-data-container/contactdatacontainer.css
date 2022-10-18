@@ -1,0 +1,21 @@
+.contact-data-container {
+  border: 1px var(--main900) solid;
+  background-color: var(--main100);
+  color: var(--main900);
+  width: 675px;
+}
+
+.contact-data-container--header {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.contact-data-container--left-col,
+.contact-data-container--right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}

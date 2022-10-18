@@ -1,9 +1,9 @@
 import "./mainpage.css";
 
 import Footer from "../footer/Footer";
-import ProductsList from "../products_list/ProductsList";
-import CategoriesList from "../categories_list/CategoriesList";
-import Sort from "../sort/Sort";
+import ProductsList from "./products-list/ProductsList";
+import CategoriesList from "./categories-list/CategoriesList";
+import Sort from "./sort/Sort";
 
 import { useState } from "react";
 

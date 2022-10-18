@@ -1,35 +1,25 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CartPage from "../cartpage/CartPage";
 import MainPage from "../mainpage/MainPage";
 import Navbar from "../navbar/Navbar";
-import OrderHisoryPage from "../orderhistorypage/OrderHistoryPage";
+import OrderHisoryPage from "../order-history-page/OrderHistoryPage";
 import OrderPage from "../orderpage/OrderPage";
 
-import CartItemsContext from "../cartitemscontext/CartItemsContext";
+import OrderSuccessPage from "../order-success-page/OrderSuccessPage";
 
 function App() {
-  const [cartItems, setCartItems] = useState(0);
-
-  useEffect(() => {
-    localStorage.cart
-      ? setCartItems(JSON.parse(localStorage.cart).reduce((acc, item) => acc + item.quantity, 0))
-      : null;
-  }, []);
-
   return (
-    <CartItemsContext.Provider value={cartItems}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Navbar />}>
-            <Route index element={<MainPage />} />
-            <Route path="cart" element={<CartPage />} />
-            <Route path="cart/order" element={<OrderPage />} />
-            <Route path="order-history" element={<OrderHisoryPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </CartItemsContext.Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<MainPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="cart/order" element={<OrderPage />} />
+          <Route path="order-history" element={<OrderHisoryPage />} />
+          <Route path="order-success" element={<OrderSuccessPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

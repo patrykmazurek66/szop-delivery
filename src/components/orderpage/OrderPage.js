@@ -1,24 +1,23 @@
 import "./orderpage.css";
 
-import ContactDataContainer from "../contactdatacontainer/ContactDataContainer";
+import ContactDataContainer from "./contact-data-container/ContactDataContainer";
 import Footer from "../footer/Footer";
-import OrderItemsContainer from "../orderitemscontainer/OrderItemsContainer";
-import Div from "../div/Div";
+import OrderItemsContainer from "./order-items-container/OrderItemsContainer";
 import { Button } from "@mui/material";
 
 export default function OrderPage() {
   return (
     <div className="order-page">
-      <div className="order-page-hero">
-        <Div column>
+      <div className="order-page--hero">
+        <div className="order-page--hero--order-items-container">
           <OrderItemsContainer />
-        </Div>
-        <Div column medium>
+        </div>
+        <div className="order-page--hero--contact-container">
           <ContactDataContainer />
           <Button variant="contained" type="submit" form="data-form">
             Order
           </Button>
-        </Div>
+        </div>
       </div>
       <Footer />
     </div>

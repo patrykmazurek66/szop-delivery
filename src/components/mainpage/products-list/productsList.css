@@ -1,0 +1,17 @@
+.products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products-list--items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 50px 20px;
+  gap: 20px 40px;
+  text-align: center;
+}
+#products-list--button {
+  width: 80%;
+}

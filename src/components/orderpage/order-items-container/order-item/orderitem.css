@@ -1,0 +1,17 @@
+.order-item {
+  height: 50px;
+  background-color: var(--main50);
+  border-bottom: 1px var(--main900) solid;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 20px;
+  color: var(--main900);
+  font-weight: 500;
+  padding: 0 10px;
+
+  text-transform: capitalize;
+}

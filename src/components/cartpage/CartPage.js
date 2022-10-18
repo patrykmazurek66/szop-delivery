@@ -1,5 +1,5 @@
 import Footer from "../footer/Footer";
-import CartItemsContainer from "../cartitemscontainer/CartItemsContainer";
+import CartItemsContainer from "./cart-items-container/CartItemsContainer";
 import "./cartpage.css";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
