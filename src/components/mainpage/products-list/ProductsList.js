@@ -56,7 +56,7 @@ export default function ProductsList({ categories, sortType }) {
   return (
     <div className="products-list">
       <div className="products-list--items">
-        Load more
+        {/* Load more */}
         {items.map(item => {
           return (
             <Product
@@ -73,6 +73,7 @@ export default function ProductsList({ categories, sortType }) {
       </div>
       {maxItemsAmount > itemsAmount && (
         <Button
+          data-testid="load-btn"
           id="products-list--button"
           variant="outlined"
           onClick={() => {

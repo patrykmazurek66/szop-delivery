@@ -3,7 +3,7 @@ import axios from "axios";
 
 jest.mock("axios");
 
-it("should fetch categories", () => {
+it("should fetch categories", async () => {
   const category = "burgers";
   const resp = { data: category };
   axios.get.mockResolvedValue(resp);

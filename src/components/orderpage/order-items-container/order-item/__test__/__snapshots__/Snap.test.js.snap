@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="order-item"
+>
+  <p>
+     × 
+  </p>
+  <p>
+    NaN
+    $
+  </p>
+</div>
+`;

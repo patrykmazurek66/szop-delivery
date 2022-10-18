@@ -22,7 +22,7 @@ export function axiosGetOrderHistory() {
   });
 }
 
-export function axiosPostOrder(data) {
+export async function axiosPostOrder(data) {
   const cartData = JSON.parse(localStorage.cart);
   const date = new Date();
   const dateString = date.getTime().toString();
