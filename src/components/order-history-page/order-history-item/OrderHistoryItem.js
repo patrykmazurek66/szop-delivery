@@ -15,9 +15,10 @@ export default function OrderHistoryItem({ item }) {
     setMoreDetails(!moreDetails);
   };
 
+  console.log(JSON.stringify(item));
   return (
     <div className="order-history-container">
-      <ButtonBase className="more-info-btn" onClick={showMoreDetails}>
+      <ButtonBase className="more-info-btn" onClick={showMoreDetails} data-testid="button">
         <OrderHistoryInfo
           moreDetails={moreDetails}
           id={item.id}

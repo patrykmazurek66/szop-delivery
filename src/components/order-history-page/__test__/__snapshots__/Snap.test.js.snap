@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product renders correctly 1`] = `
+<div
+  className="order-history-page"
+>
+  <div
+    className="order-history-page-top"
+  >
+    <div
+      className="empty-history-container"
+    >
+      <p>
+        THERE IS NO HISTORY!
+      </p>
+      <p>
+        Consider buying something :)
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div
+      className="footer-gap"
+    />
+    <div
+      className="footer-content"
+    >
+      <div
+        className="footer--links-container"
+      >
+        <a
+          href="/#"
+        >
+          Help
+        </a>
+        <a
+          href="/#"
+        >
+          FAQ
+        </a>
+        <a
+          href="/#"
+        >
+          Cookies
+        </a>
+        <a
+          href="/#"
+        >
+          Contact
+        </a>
+        <a
+          href="/#"
+        >
+          Facebook
+        </a>
+        <a
+          href="/#"
+        >
+          Log in
+        </a>
+        <a
+          href="/#"
+        >
+          Sign up
+        </a>
+      </div>
+      <p>
+        © SzopDelivery 2022
+      </p>
+    </div>
+  </footer>
+</div>
+`;

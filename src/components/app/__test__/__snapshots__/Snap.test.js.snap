@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="logo"
+        className="nav--logo"
+        src="/logo.png"
+      />
+    </a>
+    <h1
+      className="nav--app-name"
+    >
+      SZOP-DELIVERY
+    </h1>
+    <div
+      className="nav--icons-container"
+    >
+      <a
+        href="/cart"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ha5wk2-MuiSvgIcon-root"
+          data-testid="ShoppingCartIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+          />
+        </svg>
+      </a>
+      <a
+        href="/order-history"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ha5wk2-MuiSvgIcon-root"
+          data-testid="HistoryIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+          />
+        </svg>
+      </a>
+    </div>
+  </nav>,
+  <div
+    className="main-page"
+  >
+    <div
+      className="top-page"
+    >
+      <div
+        className="sort-container"
+      >
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary sort-container-button css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+          onClick={[Function]}
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            className="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            Name Ascending
+          </div>
+          <input
+            aria-hidden={true}
+            className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            tabIndex={-1}
+            value="name-asc"
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden={true}
+            className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="css-yjsfm1"
+            >
+              <span>
+                sort
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <section
+        className="main-page--hero"
+      >
+        <div
+          className="categories-list"
+        >
+          <p
+            className="categories-list-header"
+          >
+            Categories
+          </p>
+          <div
+            className="MuiToggleButtonGroup-root MuiToggleButtonGroup-vertical css-mjlvw-MuiToggleButtonGroup-root"
+            role="group"
+          />
+        </div>
+        <div
+          className="products-list"
+        >
+          <div
+            className="products-list--items"
+          />
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div
+        className="footer-gap"
+      />
+      <div
+        className="footer-content"
+      >
+        <div
+          className="footer--links-container"
+        >
+          <a
+            href="/#"
+          >
+            Help
+          </a>
+          <a
+            href="/#"
+          >
+            FAQ
+          </a>
+          <a
+            href="/#"
+          >
+            Cookies
+          </a>
+          <a
+            href="/#"
+          >
+            Contact
+          </a>
+          <a
+            href="/#"
+          >
+            Facebook
+          </a>
+          <a
+            href="/#"
+          >
+            Log in
+          </a>
+          <a
+            href="/#"
+          >
+            Sign up
+          </a>
+        </div>
+        <p>
+          © SzopDelivery 2022
+        </p>
+      </div>
+    </footer>
+  </div>,
+]
+`;

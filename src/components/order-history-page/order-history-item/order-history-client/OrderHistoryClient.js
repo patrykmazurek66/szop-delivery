@@ -14,9 +14,15 @@ export default function OrderHistoryClient({
     <div className="order-history-client--container">
       <div className="order-history-client--column-container">
         <p className="order-history-client--header">Shipping Address</p>
-        <p className="order-history-client--text">{name}</p>
-        <p className="order-history-client--text">{city}</p>
-        <p className="order-history-client--text">{address}</p>
+        <p className="order-history-client--text" data-testid="client-name">
+          {name}
+        </p>
+        <p className="order-history-client--text" data-testid="client-city">
+          {city}
+        </p>
+        <p className="order-history-client--text" data-testid="client-address">
+          {address}
+        </p>
         <p className="order-history-client--text"></p>
       </div>
       <div className="order-history-client--column-container">

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="cart-page--hero"
+>
+  <div
+    className="cart-page--cart-items-container"
+  >
+    <div
+      className="cart-items-container"
+    >
+      <p
+        className="cart-items-container--header"
+      >
+        Your Cart
+      </p>
+      <div
+        className="cart-items-container--items-list"
+      >
+        <h2>
+          Your cart is empty! Buy something!
+        </h2>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div
+      className="footer-gap"
+    />
+    <div
+      className="footer-content"
+    >
+      <div
+        className="footer--links-container"
+      >
+        <a
+          href="/#"
+        >
+          Help
+        </a>
+        <a
+          href="/#"
+        >
+          FAQ
+        </a>
+        <a
+          href="/#"
+        >
+          Cookies
+        </a>
+        <a
+          href="/#"
+        >
+          Contact
+        </a>
+        <a
+          href="/#"
+        >
+          Facebook
+        </a>
+        <a
+          href="/#"
+        >
+          Log in
+        </a>
+        <a
+          href="/#"
+        >
+          Sign up
+        </a>
+      </div>
+      <p>
+        © SzopDelivery 2022
+      </p>
+    </div>
+  </footer>
+</div>
+`;

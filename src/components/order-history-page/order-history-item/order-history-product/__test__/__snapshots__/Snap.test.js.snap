@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product renders correctly 1`] = `
+<div
+  className="order-history-product--container"
+>
+  <img
+    alt="Burger"
+    className="order-history-product--img"
+    src="/food/thumbnails/burger.jpg"
+  />
+  <div
+    className="order-history-product--name-qty"
+  >
+    <p
+      className="order-history-product--name"
+    >
+      Burger
+    </p>
+    <p
+      className="order-history-product--quantity"
+    >
+      Price: 
+      5.00
+      $
+    </p>
+    <p
+      className="order-history-product--quantity"
+    >
+      Quantity: 
+      1
+    </p>
+  </div>
+  <div
+    className="order-history-product--cost"
+  >
+    <p>
+      5.00
+      $
+    </p>
+  </div>
+</div>
+`;

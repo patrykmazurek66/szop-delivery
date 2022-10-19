@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
-
+import deleteFromCart from "./DeleteFromCart";
+import addToCart from "./AddToCart";
 import { useState, useEffect } from "react";
 import "./cartitem.css";
 
@@ -15,34 +16,13 @@ export default function CartItem({ name, price, qty, refresh }) {
     refresh();
   }, [itemQuantity]);
 
-  const addToCart = item => {
-    if (item.quantity == 0) {
-      deleteFromCart(item.name);
-      return;
-    }
-    let cart = [];
-    let elements = 0;
-    cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
-    cart.map(el => {
-      el.name === item.name ? (el.quantity = item.quantity * 1) : elements++;
-    });
-    elements === cart.length ? cart.push(item) : () => {};
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
-
-  const deleteFromCart = itemName => {
-    let cart = [];
-    cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
-    cart = cart.filter(el => el.name !== itemName);
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
-
   return (
     <div className="item-container">
       <p className="item-name">{name}</p>
       <div className="item-container--righ-col">
         <div className="qty-container">
           <Button
+            data-testid="btn-min"
             variant="text"
             size="small"
             onClick={() => {
@@ -52,8 +32,16 @@ export default function CartItem({ name, price, qty, refresh }) {
             <RemoveIcon />
           </Button>
 
-          <input min={0} required className="qty-container--qty" value={itemQuantity} readOnly />
+          <input
+            data-testid="qty"
+            min={0}
+            required
+            className="qty-container--qty"
+            value={itemQuantity}
+            readOnly
+          />
           <Button
+            data-testid="btn-pls"
             variant="text"
             size="small"
             onClick={() => {
@@ -65,6 +53,7 @@ export default function CartItem({ name, price, qty, refresh }) {
         </div>
         <p className="price">{(price * qty).toFixed(2)}$</p>
         <Button
+          data-testid="btn-del"
           className="delete-item"
           onClick={() => {
             deleteFromCart(name);

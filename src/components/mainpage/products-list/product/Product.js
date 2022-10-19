@@ -2,20 +2,10 @@ import "./product.css";
 import { Slide, Snackbar, Button, Modal } from "@mui/material";
 import { useState } from "react";
 import ProductModal from "../../product-modal/ProductModal";
+import addToCart from "./AddToCart";
 
 export default function Product({ name, imagePath, description, price, rating, nutrition }) {
   const [open, setOpen] = useState(false);
-
-  const addToCart = item => {
-    let cart = [];
-    let elements = 0;
-    cart = JSON.parse(localStorage.cart ? localStorage.cart : "[]");
-    cart.map(el => {
-      el.name === item.name ? el.quantity++ : elements++;
-    });
-    elements === cart.length ? cart.push(item) : () => {};
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
 
   const handleClick = () => {
     setOpen(true);
