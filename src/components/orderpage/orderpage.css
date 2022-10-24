@@ -9,6 +9,8 @@
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
   align-items: center;
   justify-content: space-evenly;
 }

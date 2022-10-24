@@ -36,7 +36,7 @@ exports[`Product renders correctly 1`] = `
       className="product--name-desc"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium product-name css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium product--name-btn css-1e6y48t-MuiButtonBase-root-MuiButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -54,7 +54,11 @@ exports[`Product renders correctly 1`] = `
         tabIndex={0}
         type="button"
       >
-        nazwa
+        <p
+          className="product-name"
+        >
+          nazwa
+        </p>
       </button>
       <p
         className="product-desc"

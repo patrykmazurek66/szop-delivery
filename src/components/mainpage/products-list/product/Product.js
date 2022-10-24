@@ -31,8 +31,8 @@ export default function Product({ name, imagePath, description, price, rating, n
 
       <div className="product--right-col">
         <div className="product--name-desc">
-          <Button variant="text" className="product-name" onClick={handleOpenModal}>
-            {name}
+          <Button variant="text" onClick={handleOpenModal} className="product--name-btn">
+            <p className="product-name">{name}</p>
           </Button>
           <p className="product-desc">{description}</p>
         </div>

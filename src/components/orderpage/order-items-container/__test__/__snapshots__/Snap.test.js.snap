@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product renders correctly 1`] = `
+<div
+  className="order-items-container"
+>
+  <p
+    className="order-items-container--header"
+  >
+    Your Order
+  </p>
+  <div
+    className="order-items-container--items"
+  >
+    <div
+      className="order-items-container--items--delivery"
+    >
+      <p>
+        Delivery 
+      </p>
+      5$
+    </div>
+  </div>
+  <div
+    className="order-items-container--total-cost"
+  >
+    <p>
+      Total
+    </p>
+    <p>
+      5.00
+      $
+    </p>
+  </div>
+</div>
+`;

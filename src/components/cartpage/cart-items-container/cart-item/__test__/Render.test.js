@@ -33,16 +33,15 @@ it("checks if buttons working +1/-1", () => {
 });
 
 it("checks if delete button works", () => {
+  const mockedRefresh = jest.fn();
   const { container } = render(
-    <CartItem name={"burger"} price={5} qty={1} key={"burger"} refresh={() => {}} />
+    <CartItem name={"burger"} price={5} qty={1} key={"burger"} refresh={mockedRefresh} />
   );
   const div = document.createElement("div");
   div.appendChild(container);
   const deleteBtn = getByTestId(container, "btn-del");
 
-  console.log(div.innerHTML);
+  console.log(container.childElementCount);
   fireEvent.click(deleteBtn);
-  console.log(div.innerHTML);
-  // expect(div.childNodes).toBe(false);
+  expect(mockedRefresh).toBeCalled();
 });
-//dokonczyc ten delete btn

@@ -1,4 +1,6 @@
 import SortBy from "../sortBy";
+import ProductsList from "../ProductsList";
+import { getByTestId, queryByTestId, render } from "@testing-library/react";
 
 it("sort array by name asc", () => {
   const arr = [
@@ -133,4 +135,9 @@ it("sort array by price dsc", () => {
       },
     ])
   );
+});
+
+it("checks if there is no load btn, items=db items", async () => {
+  const { container } = render(<ProductsList categories={[]} sortType={"name-asc"} />);
+  expect(queryByTestId(container, "load-btn")).not.toBeInTheDocument();
 });

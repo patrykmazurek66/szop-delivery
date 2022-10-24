@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import { MenuItem, Select } from "@mui/material";
 
-export default function Searchbar({ handler }) {
+export default function Sort({ handler }) {
   const [sort, setSort] = useState("name-asc");
 
   const handleChange = e => {

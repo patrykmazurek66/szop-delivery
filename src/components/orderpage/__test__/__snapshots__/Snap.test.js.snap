@@ -1,0 +1,619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product renders correctly 1`] = `
+<div
+  className="order-page"
+>
+  <div
+    className="order-page--hero"
+  >
+    <div
+      className="order-page--hero--order-items-container"
+    >
+      <div
+        className="order-items-container"
+      >
+        <p
+          className="order-items-container--header"
+        >
+          Your Order
+        </p>
+        <div
+          className="order-items-container--items"
+        >
+          <div
+            className="order-items-container--items--delivery"
+          >
+            <p>
+              Delivery 
+            </p>
+            5$
+          </div>
+        </div>
+        <div
+          className="order-items-container--total-cost"
+        >
+          <p>
+            Total
+          </p>
+          <p>
+            5.00
+            $
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="order-page--hero--contact-container"
+    >
+      <div
+        className="contact-data-container"
+      >
+        <p
+          className="contact-data-container--header"
+        >
+          Contact Data
+        </p>
+        <div>
+          <form
+            className="contact-data-container--form"
+            data-testid="form"
+            id="data-form"
+            onSubmit={[Function]}
+          >
+            <div
+              className="contact-data-container--form--client-data"
+            >
+              <div
+                className="contact-data-container--left-col"
+              >
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="name"
+                    id="name-label"
+                  >
+                    Full Name
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="name"
+                      name="name"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="company"
+                    id="company-label"
+                  >
+                    Company Name
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="company"
+                      name="company"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="address1"
+                    id="address1-label"
+                  >
+                    Address
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="address1"
+                      name="address1"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="postalCode"
+                    id="postalCode-label"
+                  >
+                    Postal Code
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="postalCode"
+                      name="postalCode"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="contact-data-container--right-col"
+              >
+                 
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="email"
+                    id="email-label"
+                  >
+                    Email address
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="email"
+                      name="email"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="phone"
+                    id="phone-label"
+                  >
+                    Phone
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="phone"
+                      name="phone"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="address2"
+                    id="address2-label"
+                  >
+                    Address Next Line
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="address2"
+                      name="address2"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-standard css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink={false}
+                    htmlFor="city"
+                    id="city-label"
+                  >
+                    City
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
+                      disabled={false}
+                      id="city"
+                      name="city"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+            >
+              <div
+                className="MuiFormGroup-root MuiFormGroup-row css-qfz70r-MuiFormGroup-root"
+                role="radiogroup"
+              >
+                <div>
+                  <label
+                    className="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                    onBlur={[Function]}
+                  >
+                    <span
+                      className="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-vqmohf-MuiButtonBase-root-MuiRadio-root"
+                      onBlur={[Function]}
+                      onContextMenu={[Function]}
+                      onDragLeave={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={null}
+                    >
+                      <input
+                        checked={false}
+                        className="PrivateSwitchBase-input css-1m9pwf3"
+                        disabled={false}
+                        name="paymentMethod"
+                        onChange={[Function]}
+                        type="radio"
+                        value="blik"
+                      />
+                      <span
+                        className="css-hyxlzm"
+                      >
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbvpl3-MuiSvgIcon-root"
+                          data-testid="RadioButtonUncheckedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                          />
+                        </svg>
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hhw7if-MuiSvgIcon-root"
+                          data-testid="RadioButtonCheckedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                    >
+                      <img
+                        alt="blik"
+                        height="100px"
+                        src="/payment/blik.png"
+                        width="100px"
+                      />
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <label
+                    className="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                    onBlur={[Function]}
+                  >
+                    <span
+                      className="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary Mui-checked MuiRadio-root MuiRadio-colorPrimary css-vqmohf-MuiButtonBase-root-MuiRadio-root"
+                      onBlur={[Function]}
+                      onContextMenu={[Function]}
+                      onDragLeave={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={null}
+                    >
+                      <input
+                        checked={true}
+                        className="PrivateSwitchBase-input css-1m9pwf3"
+                        disabled={false}
+                        name="paymentMethod"
+                        onChange={[Function]}
+                        type="radio"
+                        value="payu"
+                      />
+                      <span
+                        className="css-hyxlzm"
+                      >
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbvpl3-MuiSvgIcon-root"
+                          data-testid="RadioButtonUncheckedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                          />
+                        </svg>
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-11zohuh-MuiSvgIcon-root"
+                          data-testid="RadioButtonCheckedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                    >
+                      <img
+                        alt="payu"
+                        height="100px"
+                        src="/payment/payu.png"
+                        width="100px"
+                      />
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <label
+                    className="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                    onBlur={[Function]}
+                  >
+                    <span
+                      className="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-vqmohf-MuiButtonBase-root-MuiRadio-root"
+                      onBlur={[Function]}
+                      onContextMenu={[Function]}
+                      onDragLeave={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={null}
+                    >
+                      <input
+                        checked={false}
+                        className="PrivateSwitchBase-input css-1m9pwf3"
+                        disabled={false}
+                        name="paymentMethod"
+                        onChange={[Function]}
+                        type="radio"
+                        value="cash"
+                      />
+                      <span
+                        className="css-hyxlzm"
+                      >
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbvpl3-MuiSvgIcon-root"
+                          data-testid="RadioButtonUncheckedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                          />
+                        </svg>
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hhw7if-MuiSvgIcon-root"
+                          data-testid="RadioButtonCheckedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                    >
+                      <img
+                        alt="cash"
+                        height="100px"
+                        src="/payment/cash.png"
+                        width="100px"
+                      />
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button
+              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
+              disabled={false}
+              form="data-form"
+              onBlur={[Function]}
+              onContextMenu={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              type="submit"
+            >
+              Order
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div
+      className="footer-gap"
+    />
+    <div
+      className="footer-content"
+    >
+      <div
+        className="footer--links-container"
+      >
+        <a
+          href="/#"
+        >
+          Help
+        </a>
+        <a
+          href="/#"
+        >
+          FAQ
+        </a>
+        <a
+          href="/#"
+        >
+          Cookies
+        </a>
+        <a
+          href="/#"
+        >
+          Contact
+        </a>
+        <a
+          href="/#"
+        >
+          Facebook
+        </a>
+        <a
+          href="/#"
+        >
+          Log in
+        </a>
+        <a
+          href="/#"
+        >
+          Sign up
+        </a>
+      </div>
+      <p>
+        © SzopDelivery 2022
+      </p>
+    </div>
+  </footer>
+</div>
+`;
