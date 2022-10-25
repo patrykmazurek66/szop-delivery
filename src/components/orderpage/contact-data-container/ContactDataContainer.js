@@ -19,7 +19,6 @@ export default function ContactDataContainer() {
           id="data-form"
           data-testid="form"
           onSubmit={handleSubmit(data => {
-            console.log("success");
             axiosPostOrder(data);
             navigate("/order-success");
           })}

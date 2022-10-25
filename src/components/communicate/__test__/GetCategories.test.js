@@ -10,5 +10,3 @@ it("should fetch categories", async () => {
 
   return axiosGetCategories.call().then(data => expect(data).toContain(category));
 });
-
-//Jaki jest cel mockowania funkjci skoro wtedy nie można sprawdzić co faktycznie zwraca?

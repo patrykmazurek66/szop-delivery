@@ -46,38 +46,3 @@ it("now checks all inputs with proper data", () => {
   expect(inputs[6].value).toBe("9");
   expect(inputs[7].value).toBe("Wroclove");
 });
-//it("checks if data goes to database", () => {});
-
-// it("checks if navigates to next page", async () => {
-//   const { container } = render(
-//     <BrowserRouter>
-//       <ContactDataContainer />
-//     </BrowserRouter>
-//   );
-
-//   const form = getByTestId(container, "form");
-
-//   const btn = getByText(container, "Order");
-
-//   const nameInput = getByLabelText(container, "Full Name");
-//   nameInput.value = "Jan Kowalski";
-//   const companyInput = getByLabelText(container, "Company Name");
-//   companyInput.value = "Capgemini";
-//   const address1Input = getByLabelText(container, "Address");
-//   address1Input.value = "Legnicka 3";
-//   const postalInput = getByLabelText(container, "Postal Code");
-//   postalInput.value = "50-555";
-//   const mailInput = getByLabelText(container, "Email address");
-//   mailInput.value = "mail@me.com";
-//   const phoneInput = getByLabelText(container, "Phone");
-//   phoneInput.value = "111222333";
-//   const address2Input = getByLabelText(container, "Address Next Line");
-//   address2Input.value = "9";
-//   const cityInput = getByLabelText(container, "City");
-//   cityInput.value = "Wroclove";
-
-//   fireEvent.click(btn);
-//   // expect(navigate).toHaveBeenCalledTimes(1);
-//   expect(btn).toHaveBeenCalled();
-//   expect(window.location.pathname).toBe("http://localhost:3005/order-success");
-// });

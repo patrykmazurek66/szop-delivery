@@ -41,8 +41,5 @@ it("Should post order", async () => {
 
   axios.post.mockImplementationOnce(() => Promise.resolve(data));
 
-  console.log(Promise.resolve(data));
   expect(axiosPostOrder(data)).toEqual(Promise.resolve(data));
 });
-
-// ?????????????
